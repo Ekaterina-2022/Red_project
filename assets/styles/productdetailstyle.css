@@ -10,8 +10,7 @@ body {
   font-family: "SVN-Gilroy", "Arial", sans-serif;
   src: url("../fonts/SVN-GilroyBold.woff2"), url("../fonts/SVN-GilroyBold.woff");
   font-style: normal;
-  font-weight: 750;
-  font-display: swap;
+  font-weight: 700;
 }
 
 .header {
@@ -48,7 +47,9 @@ a:hover {
   display: none;
 }
 .button {
-  font-size: 1em;
+  width: 150px;
+  text-align: center;
+  font-size: 0.7em;
   color: white;
   padding: 9px 25px;
   background-color: #003459;
@@ -60,6 +61,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     width: 20em;
+    margin-left: 20px;
   }
   .header__nav_link {
     font-size: 1rem;
