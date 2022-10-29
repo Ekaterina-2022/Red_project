@@ -14,9 +14,9 @@ body {
 }
 
 .header {
-  height: 100px;
+  width: 100%;
+  height: fit-content;
   display: block;
-  margin: 20px;
 }
 a:hover {
   text-decoration: underline;
@@ -55,13 +55,49 @@ a:hover {
   background-color: #003459;
   border: none;
   border-radius: 50px;
+  margin-right: 2%;
+}
+.section {
+  width: 100%;
+}
+.section__scroll {
+  width: 25rem;
+  height: 500px;
+  background-image: url("../images/image2.jpg");
+  background-size: cover;
+}
+.section__images {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin: 3% 0 3% 3%;
+}
+.section__images_list {
+  width: 6rem;
+}
+.article {
+  width: 90%;
+  margin: 0 5%;
+  display: inline-block;
+  flex-direction: row;
+  background-color: #fceed5;
+  border-radius: 25px;
 }
 @media screen and (min-width: 780px) {
+  .header {
+    width: 90%;
+    margin: 5%;
+    background-image: none;
+  }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+  }
   .header__nav {
     display: flex;
     justify-content: space-between;
     width: 20em;
-    margin-left: 20px;
+    margin-left: 5%;
   }
   .header__nav_link {
     font-size: 1rem;
@@ -70,9 +106,14 @@ a:hover {
   .header__burger {
     display: none;
   }
+  .section {
+    width: 90%;
+    margin-right: 5%;
+    display: inline;
+  }
 }
 @media screen and (min-width: 1180px) {
-  body {
+  .header {
     width: 90%;
     margin-left: 5%;
   }
