@@ -8,6 +8,10 @@
 body {
   width: 100%;
   font-family: "SVN-Gilroy", "Arial", sans-serif;
+  src: url("../fonts/SVN-GilroyBold.woff2"), url("../fonts/SVN-GilroyBold.woff");
+  font-style: normal;
+  font-weight: 750;
+  font-display: swap;
 }
 
 .header {
