@@ -12,7 +12,13 @@ body {
   font-style: normal;
   font-weight: 700;
 }
-
+@font-face {
+  font-family: "SVN-Gilroy", "Arial", sans-serif;
+  src: url("../fonts/SVN-GilroyBold.woff2"), url("../fonts/SVN-GilroyBold.woff");
+  font-style: normal;
+  font-weight: 700;
+  color: #003459;
+}
 .header {
   width: 100%;
   height: fit-content;
@@ -21,7 +27,9 @@ body {
 a:hover {
   text-decoration: underline;
 }
-
+span {
+  color: #003459;
+}
 .header__logo {
   display: flex;
   justify-content: space-between;
@@ -77,11 +85,73 @@ a:hover {
 }
 .article {
   width: 90%;
-  margin: 0 5%;
-  display: inline-block;
+  margin: 2%;
+  display: block;
   flex-direction: row;
   background-color: #fceed5;
   border-radius: 25px;
+  font-size: 0.6em;
+}
+.article__column,
+.profile__text {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.article__text {
+  font-size: 0.9rem;
+  padding-left: 10px;
+}
+.profile {
+  margin: 5%;
+}
+.profile__info {
+  color: #00171f;
+}
+.profile__list {
+  float: left;
+}
+.profile__share {
+  display: flex;
+  justify-content: flex-end;
+}
+.profile__share_img {
+  width: 4em;
+}
+.profile__container {
+  width: 90%;
+
+  display: block;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.6em;
+  text-align: left;
+  border-bottom: 1px solid #dddfe0;
+  margin: 0 2%;
+  padding: 0;
+}
+.profile__text {
+  width: 48%;
+  font-weight: lighter;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 10px 0;
+}
+.profile__text {
+  color: #667479;
+}
+.profile__text ::before {
+  content: ":";
+}
+.aside-card {
+  margin: 2%;
+}
+.aside-card__container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 780px) {
   .header {
@@ -146,4 +216,144 @@ a:hover {
     padding: 5px 5px 5px 25px;
     font-size: 1rem;
   }
+}
+
+/* Карточки*/
+@font-face {
+  font-family: "SVN-Gilroy Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SVN-Gilroy Light"), url("SVNGilroy Light.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  font-family: "SVN-Gilroy", sans-serif, serif;
+}
+.card-dog {
+  box-sizing: border-box;
+  border: 8px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 13px 0px #c3caca;
+  min-width: 185px;
+  min-height: 317px;
+  width: 45vw;
+  height: 40%;
+}
+@media screen and (min-width: 576px) {
+  .card-dog {
+    height: 38%;
+    width: 19vw;
+    border-bottom: none;
+  }
+}
+.card-dog__image {
+  width: 100%;
+}
+
+.card-dog__image {
+  height: 100%;
+}
+
+.card-dog__text {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-dog__text {
+  height: 26%;
+  margin-top: 8px;
+}
+
+.card-dog__text_header {
+  height: 40%;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 4px;
+  color: #00171f;
+}
+
+.card-dog__text_header {
+  height: 30%;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.card-dog__text_features {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 30%;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.card-dog__text_features {
+  flex-direction: row;
+  height: 25%;
+  margin-bottom: 0;
+}
+
+.card-dog__text_feature__gender {
+  display: flex;
+  color: #667479;
+  margin-bottom: 4px;
+}
+
+.card-dog__text_feature__gender {
+  margin-bottom: 0;
+}
+
+.card-dog__text_feature__gender-gene {
+  justify-content: flex-start;
+  line-height: 18px;
+  font-weight: 500;
+}
+.card-dog__text_feature__gender-name {
+  padding-left: 4px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.card-dog__text_features-dot {
+  display: none;
+}
+
+.card-dog__text_features-dot {
+  display: flex;
+  padding-left: 25px;
+  color: #667479;
+}
+
+.card-dog__text_feature__ages {
+  display: flex;
+  color: #667479;
+}
+
+.card-dog__text_feature__ages::before {
+  content: "";
+  color: #00171f;
+}
+
+.card-dog__text_feature__ages-age {
+  line-height: 18px;
+  font-weight: 500;
+}
+.card-dog__text_feature__ages-years {
+  padding-left: 4px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.card-dog__text_price {
+  height: 30%;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00171f;
+}
+
+.card-dog__text_price {
+  font-size: 14px;
 }
