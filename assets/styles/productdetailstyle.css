@@ -20,7 +20,7 @@ body {
   color: #003459;
 }
 .header {
-  width: 100%;
+  width: 90%;
   height: fit-content;
   display: block;
 }
@@ -65,27 +65,31 @@ span {
   border-radius: 50px;
   margin-right: 2%;
 }
-.section {
+.section,
+.section-productscroll,
+.section__block {
   width: 100%;
 }
+
 .section__scroll {
-  width: 25rem;
+  width: 100%;
   height: 500px;
   background-image: url("../images/image2.jpg");
   background-size: cover;
 }
 .section__images {
-  width: 500px;
+  width: 90%;
   display: flex;
   justify-content: space-around;
+
   margin: 3% 0 3% 3%;
 }
 .section__images_list {
-  width: 6rem;
+  width: 3.9rem;
 }
 .article {
   width: 90%;
-  margin: 2%;
+  margin: 1rem;
   display: block;
   flex-direction: row;
   background-color: #fceed5;
@@ -109,7 +113,29 @@ span {
 .profile__info {
   color: #00171f;
 }
+.profile-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 3% 0;
+}
+.profile-buttons_chat,
+.profile-buttons_contact {
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1rem;
+}
+.profile-buttons_chat {
+  width: 200px;
+  align-self: flex-end;
+  background-color: white;
+  border: 2px solid #003459;
+  color: #003459;
+  font-weight: 700;
+}
+
 .profile__list {
+  font-size: 1rem;
   float: left;
 }
 .profile__share {
@@ -117,7 +143,7 @@ span {
   justify-content: flex-end;
 }
 .profile__share_img {
-  width: 4em;
+  width: 3.5em;
 }
 .profile__container {
   width: 90%;
@@ -144,8 +170,15 @@ span {
 .profile__text ::before {
   content: ":";
 }
-.aside-card {
+.aside-card,
+.section-customer {
   margin: 2%;
+}
+.aside-card__heading,
+.section-customer__heading {
+  font-size: 2rem;
+  margin-bottom: 3%;
+  color: #003459;
 }
 .aside-card__container {
   display: flex;
@@ -155,8 +188,8 @@ span {
 }
 @media screen and (min-width: 780px) {
   .header {
-    width: 90%;
-    margin: 5%;
+    width: 96%;
+    margin: 2%;
     background-image: none;
   }
   .header__container {
@@ -181,7 +214,11 @@ span {
     margin-right: 5%;
     display: inline;
   }
+  .profile__share_img {
+    width: 6rem;
+  }
 }
+
 @media screen and (min-width: 1180px) {
   .header {
     width: 90%;
@@ -216,144 +253,7 @@ span {
     padding: 5px 5px 5px 25px;
     font-size: 1rem;
   }
-}
-
-/* Карточки*/
-@font-face {
-  font-family: "SVN-Gilroy Light";
-  font-style: normal;
-  font-weight: normal;
-  src: local("SVN-Gilroy Light"), url("SVNGilroy Light.woff") format("woff");
-}
-
-* {
-  margin: 0;
-  font-family: "SVN-Gilroy", sans-serif, serif;
-}
-.card-dog {
-  box-sizing: border-box;
-  border: 8px solid white;
-  border-radius: 10px;
-  box-shadow: 0px 0px 13px 0px #c3caca;
-  min-width: 185px;
-  min-height: 317px;
-  width: 45vw;
-  height: 40%;
-}
-@media screen and (min-width: 576px) {
-  .card-dog {
-    height: 38%;
-    width: 19vw;
-    border-bottom: none;
+  .profile__list {
+    font-size: 2rem;
   }
-}
-.card-dog__image {
-  width: 100%;
-}
-
-.card-dog__image {
-  height: 100%;
-}
-
-.card-dog__text {
-  height: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.card-dog__text {
-  height: 26%;
-  margin-top: 8px;
-}
-
-.card-dog__text_header {
-  height: 40%;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 4px;
-  color: #00171f;
-}
-
-.card-dog__text_header {
-  height: 30%;
-  font-size: 16px;
-  margin-bottom: 0;
-}
-
-.card-dog__text_features {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  height: 30%;
-  margin-bottom: 8px;
-  font-size: 12px;
-}
-
-.card-dog__text_features {
-  flex-direction: row;
-  height: 25%;
-  margin-bottom: 0;
-}
-
-.card-dog__text_feature__gender {
-  display: flex;
-  color: #667479;
-  margin-bottom: 4px;
-}
-
-.card-dog__text_feature__gender {
-  margin-bottom: 0;
-}
-
-.card-dog__text_feature__gender-gene {
-  justify-content: flex-start;
-  line-height: 18px;
-  font-weight: 500;
-}
-.card-dog__text_feature__gender-name {
-  padding-left: 4px;
-  line-height: 18px;
-  font-weight: 700;
-}
-.card-dog__text_features-dot {
-  display: none;
-}
-
-.card-dog__text_features-dot {
-  display: flex;
-  padding-left: 25px;
-  color: #667479;
-}
-
-.card-dog__text_feature__ages {
-  display: flex;
-  color: #667479;
-}
-
-.card-dog__text_feature__ages::before {
-  content: "";
-  color: #00171f;
-}
-
-.card-dog__text_feature__ages-age {
-  line-height: 18px;
-  font-weight: 500;
-}
-.card-dog__text_feature__ages-years {
-  padding-left: 4px;
-  line-height: 18px;
-  font-weight: 700;
-}
-.card-dog__text_price {
-  height: 30%;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  color: #00171f;
-}
-
-.card-dog__text_price {
-  font-size: 14px;
 }
