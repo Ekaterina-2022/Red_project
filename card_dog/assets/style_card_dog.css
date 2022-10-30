@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "SVN-Gilroy Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SVN-Gilroy Light"), url("SVNGilroy Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SVN-Gilroy Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SVN-Gilroy Bold"), url("SVNGilroy Bold.woff") format("woff");
+}
+* {
+  margin: 0;
+  font-family: "SVN-Gilroy", sans-serif, serif;
+}
+.card-dog {
+  box-sizing: border-box;
+  border: 8px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 13px 0px #c3caca;
+  min-width: 185px;
+  min-height: 317px;
+  width: 45vw;
+  height: 40%;
+}
+@media screen and (min-width: 576px) {
+  .card-dog {
+    height: 38%;
+    width: 19vw;
+    border-bottom: none;
+  }
+}
+.card-dog__image {
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__image {
+    height: 100%;
+  }
+}
+.card-dog__text {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text {
+    height: 26%;
+    margin-top: 8px;
+  }
+}
+.card-dog__text_header {
+  height: 40%;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 4px;
+  color: #00171f;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text_header {
+    height: 30%;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}
+.card-dog__text_features {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 30%;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text_features {
+    flex-direction: row;
+    height: 25%;
+    margin-bottom: 0;
+  }
+}
+.card-dog__text_feature__gender {
+  display: flex;
+  color: #667479;
+  margin-bottom: 4px;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text_feature__gender {
+    margin-bottom: 0;
+  }
+}
+.card-dog__text_feature__gender-gene {
+  justify-content: flex-start;
+  line-height: 18px;
+  font-weight: 500;
+}
+.card-dog__text_feature__gender-name {
+  padding-left: 4px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.card-dog__text_features-dot {
+  display: none;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text_features-dot {
+    display: flex;
+    padding-left: 25px;
+    color: #667479;
+  }
+}
+.card-dog__text_feature__ages {
+  display: flex;
+  color: #667479;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text_feature__ages::before {
+    content: "";
+    color: #00171f;
+  }
+}
+.card-dog__text_feature__ages-age {
+  line-height: 18px;
+  font-weight: 500;
+}
+.card-dog__text_feature__ages-years {
+  padding-left: 4px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.card-dog__text_price {
+  height: 30%;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00171f;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text_price {
+    font-size: 14px;
+  }
+}
