@@ -11,6 +11,10 @@
 
   font-weight: 700;
   border-radius: 60px;
+  cursor: pointer;
+}
+.button:hover {
+  box-shadow: 0 0 3px 3px #bbbebf;
 }
 .button_transparent {
   width: 250px;
