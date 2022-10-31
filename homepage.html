@@ -7,61 +7,93 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets\styles\normalize.css" />
     <link rel="stylesheet" href="assets\styles\homepagestyle.css" />
+    <script
+      src="https://kit.fontawesome.com/dffa2ca129.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header class="header">
-      <div class="header__container">
-        <div class="header__logo">
-          <a class="header__links" href="#">
-            <img
-              class="header__burger link"
-              src="assets/logo/burger.svg"
-              alt="logo nav"
-            />
-          </a>
-          <a href="#">
-            <img
-              class="header__logo_major link"
-              src="assets/logo/Group.svg"
-              alt="logo Monito"
-            />
-          </a>
-          <nav class="header__nav">
-            <a class="header__nav_link" href="#">Home</a>
-            <a class="header__nav_link" href="#">Category</a>
-            <a class="header__nav_link" href="#">About</a>
-            <a class="header__nav_link" href="#">Contact</a>
-          </nav>
+    <div class="overheader">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__logo">
+            <a class="header__links" href="#">
+              <img
+                class="header__burger link"
+                src="assets/logo/burger.svg"
+                alt="logo nav"
+              />
+            </a>
+            <a href="#">
+              <img
+                class="header__logo_major link"
+                src="assets/logo/Group.svg"
+                alt="logo Monito"
+              />
+            </a>
+            <nav class="header__nav">
+              <a class="header__nav_link" href="#">Home</a>
+              <a class="header__nav_link" href="#">Category</a>
+              <a class="header__nav_link" href="#">About</a>
+              <a class="header__nav_link" href="#">Contact</a>
+            </nav>
 
-          <form class="header__form">
-            <input
-              class="header__input"
-              type="text"
-              placeholder="Search something here!"
-            />
-          </form>
-          <button class="header__button button" type="submit">
-            Join the community
-          </button>
-          <select class="header__select header__select_cur">
-            <option value="1" selected>USD</option>
-            <option value="2">RUB</option>
-            <option value="3">EUR</option>
-            <option value="4">VND</option>
-            <option value="5">GBP</option>
-            <option value="6">CNY</option>
-            <option value="7">VND</option>
-            <option value="8">TRY</option>
-          </select>
-          <a class="header__links" href="#">
-            <img
-              class="header__search link"
-              src="assets/logo/magnifier.png"
-              alt="search"
-            />
-          </a>
+            <form class="header__form">
+              <input
+                class="header__input"
+                type="text"
+                placeholder="Search something here!"
+              />
+            </form>
+            <button class="header__button button" type="submit">
+              Join the community
+            </button>
+            <select class="header__select header__select_cur">
+              <option value="1" selected>USD</option>
+              <option value="2">RUB</option>
+              <option value="3">EUR</option>
+              <option value="4">VND</option>
+              <option value="5">GBP</option>
+              <option value="6">CNY</option>
+              <option value="7">VND</option>
+              <option value="8">TRY</option>
+            </select>
+            <a class="header__links" href="#">
+              <img
+                class="header__search link"
+                src="assets/logo/magnifier.png"
+                alt="search"
+              />
+            </a>
+          </div>
         </div>
+      </header>
+    </div>
+    <main>
+      <div class="homepage__main_banner">
+        <div class="homepage__main_banner__intro">
+          <h1>One more friend</h1>
+          <h2 class="homepage__main_banner__intro_promo">
+            Thousands more fun!
+          </h2>
+          <div class="homepage__main_banner__intro_text">
+            <p>
+              Having a pet means you have more joy, a new friend, a happy person
+              who will always be with you to have fun. We have 200+ different
+              pets that can meet your needs!
+            </p>
+          </div>
+          <div class="homepage__main_banner__intro_buttons">
+            <button class="homepage__main_banner__intro_buttons_view">
+              View Intro<i class="fa-solid fa-circle-play"></i>
+            </button>
+            <button class="homepage__main_banner__intro_buttons_explore">
+              Explore Now
+            </button>
+          </div>
+        </div>
+        <div class="homepage__main_banner__picture"></div>
       </div>
-    </header>
+    </main>
   </body>
 </html>
