@@ -129,9 +129,8 @@ a:hover {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  background: #fceed5;
   margin: 0;
-  height: 80%;
+  height: 85vh;
 }
 .homepage__main_banner__intro {
   width: 40%;
@@ -167,7 +166,7 @@ h1 {
 }
 .homepage__main_banner__intro_buttons_view {
   width: 35%;
-  height: 25%;
+  height: 8vh;
   text-align: center;
   font-size: 1.1em;
   color: #003459;
@@ -184,6 +183,7 @@ h1 {
 }
 .homepage__main_banner__intro_buttons_explore {
   width: 35%;
+  height: 8vh;
   text-align: center;
   font-size: 1.1em;
   color: white;
@@ -195,4 +195,9 @@ h1 {
 }
 .homepage__main_banner__picture {
   width: 60%;
+  background: #fceed5;
+  background-image: url(../pictures/good-humored-woman-holds-dog-laughing-pink.png),
+    url(../pictures/homepage-mainbanner/square-beige-bottom-right.png),
+    url(../pictures/homepage-mainbanner/square-bluebottom-right.png);
+  background-size: cover;
 }
