@@ -66,8 +66,7 @@ span {
   margin-right: 2%;
 }
 .section,
-.section-productscroll,
-.section__block {
+.section-productscroll {
   width: 100%;
 }
 .section-productscroll__img {
@@ -132,14 +131,14 @@ span {
   justify-content: space-between;
   margin: 3% 0;
 }
-.profile-buttons_chat,
-.profile-buttons_contact {
+.profile-buttons__chat,
+.profile-buttons__contact {
   height: 50px;
   padding: 0;
   margin: 0;
   font-size: 1.1rem;
 }
-.profile-buttons_chat {
+.profile-buttons__chat {
   width: 200px;
   align-self: flex-end;
   background-color: white;
@@ -206,8 +205,8 @@ span {
 }
 @media screen and (min-width: 780px) {
   .header {
-    width: 96%;
-    margin: 2%;
+    width: 90%;
+    margin: 2% 5%;
     background-image: none;
   }
   .header__container {
@@ -221,8 +220,9 @@ span {
     margin-left: 5%;
   }
   .header__nav_link {
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: #003459;
+    margin: 5%;
   }
   .header__burger {
     display: none;
@@ -232,8 +232,51 @@ span {
     margin-right: 5%;
     display: inline;
   }
+  .section-productscroll {
+    grid-area: section-productscroll;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .section__images {
+    width: 100%;
+    margin-left: -2%;
+  }
+  .section__images_list {
+    display: flex;
+    justify-content: space-between;
+
+    width: 17%;
+    margin: 1%;
+  }
   .profile__share_img {
     width: 6rem;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:
+      "section-productscroll section-profile-dog"
+      "section-productscroll section-profile-dog"
+      "section-productscroll section-profile-dog"
+      "section-productscroll section-profile-dog"
+      "article section-profile-dog"
+      "section-customer section-customer"
+      "aside-card aside-card";
+    width: 100%;
+  }
+  .section-profile-dog {
+    grid-area: section-profile-dog;
+  }
+  .article {
+    grid-area: article;
+  }
+  .section-customer {
+    grid-area: section-customer;
+  }
+  .aside-card {
+    grid-area: aside-card;
   }
 }
 
