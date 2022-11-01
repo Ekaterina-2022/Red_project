@@ -64,6 +64,7 @@ span {
   border: none;
   border-radius: 50px;
   margin-right: 2%;
+  cursor: pointer;
 }
 .section,
 .section-productscroll {
@@ -119,6 +120,7 @@ span {
 .article__text {
   font-size: 0.9rem;
   padding-left: 10px;
+  color: #002a48;
 }
 .profile {
   margin: 5%;
@@ -167,7 +169,7 @@ span {
   font-size: 0.6em;
   text-align: left;
   border-bottom: 1px solid #dddfe0;
-  margin: 0 2%;
+  margin: 1% 2%;
   padding: 0;
 }
 .profile__text {
@@ -176,10 +178,9 @@ span {
   justify-content: flex-start;
   margin: 0;
   padding: 10px 0;
-}
-.profile__text {
   color: #667479;
 }
+
 .profile__text ::before {
   content: ":";
 }
@@ -190,6 +191,9 @@ span {
 .section-customer__img {
   width: 100%;
   border-radius: 2em;
+}
+.section-customer__img_unseen {
+  display: none;
 }
 .aside-card__heading,
 .section-customer__heading {
@@ -202,6 +206,8 @@ span {
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
+}
+@media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 780px) {
   .header {
@@ -234,8 +240,7 @@ span {
   }
   .section-productscroll {
     grid-area: section-productscroll;
-    width: 90%;
-    margin-left: 5%;
+    width: 80%;
   }
 
   .section__images {
@@ -249,34 +254,72 @@ span {
     width: 17%;
     margin: 1%;
   }
+  .profile__container {
+    margin: 2% 0;
+  }
   .profile__share_img {
     width: 6rem;
   }
   .main {
     display: grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 50% 35% 15%;
     grid-template-rows: repeat(7, auto);
     grid-template-areas:
-      "section-productscroll section-profile-dog"
-      "section-productscroll section-profile-dog"
-      "section-productscroll section-profile-dog"
-      "section-productscroll section-profile-dog"
-      "article section-profile-dog"
-      "section-customer section-customer"
-      "aside-card aside-card";
-    width: 100%;
+      "section-productscroll section-profile-dog ."
+      "section-productscroll section-profile-dog ."
+      "section-productscroll section-profile-dog ."
+      "section-productscroll section-profile-dog ."
+      "article section-profile-dog ."
+      "section-customer section-customer section-customer"
+      "aside-card aside-card aside-card";
+    width: 90%;
+    margin: 2% 5%;
   }
   .section-profile-dog {
     grid-area: section-profile-dog;
   }
   .article {
+    width: 80%;
     grid-area: article;
+    margin: 1% 0;
+    padding: 0;
+    border-radius: 10px;
+  }
+  .article__text {
+    font-size: 0.8rem;
   }
   .section-customer {
     grid-area: section-customer;
   }
   .aside-card {
     grid-area: aside-card;
+  }
+  .profile__text {
+    font-size: 1.1rem;
+  }
+  .nav-way {
+    margin-top: 0;
+  }
+  .nav-way__link {
+    font-size: 1rem;
+  }
+  .profile__list,
+  .profile__share,
+  .card-dog_unseen {
+    display: none;
+  }
+  .section-customer,
+  .aside-card {
+    margin: 2% 0;
+  }
+  .section-customer__photos {
+    display: flex;
+    justify-content: space-between;
+  }
+  .section-customer__img,
+  .section-customer__img_unseen {
+    display: flex;
+    width: 19%;
   }
 }
 
@@ -290,6 +333,11 @@ span {
   }
   .header__button {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    width: 180px;
+    height: 50px;
   }
   .header__nav {
     display: flex;
@@ -298,6 +346,7 @@ span {
   .header__select {
     display: flex;
   }
+
   .header__select {
     padding: 10px;
     border: none;
