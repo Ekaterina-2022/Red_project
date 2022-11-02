@@ -47,7 +47,7 @@ span {
   width: 2.1rem;
 }
 .header__logo_major {
-  width: 6rem;
+  width: 8rem;
 }
 .header__button,
 .header__form,
@@ -121,6 +121,9 @@ span {
   font-size: 0.9rem;
   padding-left: 10px;
   color: #002a48;
+}
+.adress_social {
+  display: none;
 }
 .profile {
   margin: 5%;
@@ -222,7 +225,7 @@ span {
   .header__nav {
     display: flex;
     justify-content: space-between;
-    width: 20em;
+    width: 20rem;
     margin-left: 5%;
   }
   .header__nav_link {
@@ -247,6 +250,7 @@ span {
     width: 100%;
     margin-left: -2%;
   }
+
   .section__images_list {
     display: flex;
     justify-content: space-between;
@@ -287,6 +291,16 @@ span {
   }
   .article__text {
     font-size: 0.8rem;
+  }
+  .adress {
+    display: flex;
+  }
+  .adress_social_img {
+    width: 3%;
+    margin: 2%;
+  }
+  .adress_social_share {
+    width: 10%;
   }
   .section-customer {
     grid-area: section-customer;
