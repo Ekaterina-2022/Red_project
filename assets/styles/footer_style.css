@@ -1,13 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+@font-face {
+  font-family: "SVN-Gilroy", "Arial", sans-serif;
+  src: url("../fonts/SVN-GilroyBold.woff2"), url("../fonts/SVN-GilroyBold.woff");
+  font-style: normal;
+  font-weight: 700;
+  color: #003459;
+}
 .footer {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
-  height: 350px;
+  height: 500px;
   background-color: #fceed5;
 }
 .footer_reg {
   width: 90%;
   margin: 5%;
+  padding: 1%;
   background-color: #003459;
   color: white;
   border-radius: 16px;
@@ -44,12 +62,34 @@
   border-radius: 8px;
 }
 .input_button {
-  margin: 1% 3% 5% 3%;
+  margin: 1% 4% 5% 4%;
 }
 .input_reg {
   margin: 5% 5% 1% 5%;
 }
 .input_button {
-  width: 94%;
+  width: 92%;
   background-color: #003459;
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 5%;
+}
+.footer__nav_link {
+  font-size: 1rem;
+  color: #003459;
+  margin: 5%;
+}
+.footer_contacts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin: 0 25%;
+}
+.footer_contacts_img {
+  width: 100%;
+  margin: 2%;
 }
