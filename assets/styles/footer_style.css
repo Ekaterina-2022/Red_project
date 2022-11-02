@@ -1,0 +1,51 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  background-color: #fceed5;
+}
+.footer_reg {
+  width: 90%;
+  margin: 5%;
+  background-color: #003459;
+  color: white;
+  border-radius: 16px;
+}
+.footer_reg,
+.input_heading,
+.footer_form,
+.input_button,
+.input_reg {
+  margin: 5%;
+}
+.input_heading {
+  margin: 5%;
+  font-size: 1.2rem;
+}
+.footer_form,
+.input_heading,
+.input_reg,
+.input_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+.footer_form {
+  background-color: white;
+  border-radius: 14px;
+}
+.input_button,
+.input_reg {
+  align-content: center;
+  width: 90%;
+  height: 50px;
+  font-size: 1.2rem;
+
+  border-radius: 8px;
+}
+.input_button {
+  background-color: #003459;
+}
