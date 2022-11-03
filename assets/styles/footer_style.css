@@ -20,8 +20,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 600px;
+  padding: 5% 1% 0 1%;
   background-color: #fceed5;
-  padding: 5% 1%;
+  border-radius: 20px 20px 0px 0px;
 }
 .footer_reg {
   width: 90%;
@@ -104,7 +105,7 @@ body {
   border-top: 1px solid #a0b8c7;
 }
 .footer__policy {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
 
   color: #003459;
@@ -112,4 +113,46 @@ body {
 .footer__policy_link {
   color: #667479;
   font-size: 12px;
+}
+@media screen and (min-width: 780px) {
+  .footer {
+  }
+  .footer_reg {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer_form {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 0 2%;
+    padding: 0;
+  }
+  .input_heading {
+    width: 30%;
+    margin: 0 1%;
+  }
+  .input_reg {
+    width: 60%;
+    height: 2.5rem;
+    margin: 2%;
+  }
+  .input_heading {
+    font-size: 1rem;
+  }
+  .input_button {
+    width: 30%;
+    height: 2.5rem;
+    margin: 2%;
+    padding: 0;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer__nav,
+  .footer_contacts {
+    width: 20%;
+  }
 }
