@@ -19,8 +19,10 @@ body {
   display: block;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 600px;
+  padding: 5% 1% 0 1%;
   background-color: #fceed5;
+  border-radius: 20px 20px 0px 0px;
 }
 .footer_reg {
   width: 90%;
@@ -41,7 +43,8 @@ body {
 }
 .footer_form,
 .input_heading,
-.input_button {
+.input_button,
+.footer_logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,13 +74,15 @@ body {
   width: 92%;
   background-color: #003459;
 }
-.footer__nav {
+.footer__nav,
+.footer__policy {
   display: flex;
   justify-content: space-between;
   width: 90%;
   margin: 5%;
 }
-.footer__nav_link {
+.footer__nav_link,
+.footer__policy_link {
   font-size: 1rem;
   color: #003459;
   margin: 5%;
@@ -87,9 +92,67 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 50%;
-  margin: 0 25%;
+  margin: 0 25% 10% 25%;
 }
 .footer_contacts_img {
   width: 100%;
   margin: 2%;
+}
+.footer_logo {
+  width: 80%;
+  margin: 0 10%;
+  padding: 10%;
+  border-top: 1px solid #a0b8c7;
+}
+.footer__policy {
+  width: 60%;
+  margin: 0 auto;
+
+  color: #003459;
+}
+.footer__policy_link {
+  color: #667479;
+  font-size: 12px;
+}
+@media screen and (min-width: 780px) {
+  .footer {
+  }
+  .footer_reg {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer_form {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 0 2%;
+    padding: 0;
+  }
+  .input_heading {
+    width: 30%;
+    margin: 0 1%;
+  }
+  .input_reg {
+    width: 60%;
+    height: 2.5rem;
+    margin: 2%;
+  }
+  .input_heading {
+    font-size: 1rem;
+  }
+  .input_button {
+    width: 30%;
+    height: 2.5rem;
+    margin: 2%;
+    padding: 0;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer__nav,
+  .footer_contacts {
+    width: 20%;
+  }
 }
