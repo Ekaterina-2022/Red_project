@@ -206,7 +206,8 @@ h1 {
   background-repeat: no-repeat;
   background-position: right, bottom, bottom;
 }
-.homepage__dogs_catalog {
+.homepage__dogs_catalog,
+.homepage__catalogs {
   width: 100%;
   height: max-content;
   display: flex;
@@ -214,23 +215,27 @@ h1 {
   padding-left: 80px;
   padding-right: 80px;
 }
-.homepage__dogs_catalog__intro {
+.homepage__dogs_catalog__intro,
+.homepage__catalogs__intro {
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 60px;
 }
+.homepage__catalogs__intro_question,
 .homepage__dogs_catalog__intro_question {
   width: 100%;
   font-weight: 500;
 }
-.homepage__dogs_catalog__intro_view-more {
+.homepage__dogs_catalog__intro_view-more,
+.homepage__catalogs__intro_view-more {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.homepage__dogs_catalog__intro_text-view {
+.homepage__dogs_catalog__intro_text-view,
+.homepage__catalogs__intro_text-view {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -390,7 +395,8 @@ h1 {
     font-size: 14px;
   }
 }
-.homepage__advertisement {
+.homepage__advertisement,
+.homepage__banners {
   display: flex;
   justify-content: space-between;
   height: max-content;
@@ -402,12 +408,14 @@ h1 {
   background-position: left bottom, right top;
   border-radius: 20px;
 }
-.homepage__advertisement_text {
+.homepage__advertisement_text,
+.homepage__banners_text {
   width: 50%;
   padding-top: 50px;
   padding-right: 80px;
 }
-.homepage__advertisement_text_promo {
+.homepage__advertisement_text_promo,
+.homepage__banners_text_promo {
   font-size: 3em;
   font-style: normal;
   font-weight: 700;
@@ -417,7 +425,8 @@ h1 {
   color: #002a48;
   text-align: right;
 }
-.homepage__advertisement_text__intro_promo {
+.homepage__advertisement_text__intro_promo,
+.homepage__banners_text__intro_promo {
   font-style: normal;
   font-weight: 600;
   font-size: 1.75em;
@@ -426,7 +435,8 @@ h1 {
   color: #002a48;
   text-align: right;
 }
-.homepage__advertisement_text__intro_text {
+.homepage__advertisement_text__intro_text,
+.homepage__banners_text__intro_text {
   font-weight: 500;
   font-size: 0.9em;
   line-height: 1.5em;
@@ -434,14 +444,16 @@ h1 {
   text-align: right;
   padding-left: 120px;
 }
-.homepage__advertisement_picture {
+.homepage__advertisement_picture,
+.homepage__banners__picture {
   width: 50%;
   background-image: url(../pictures/horizontal-shot-adult-girl-jeans.png);
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
 }
-.homepage__advertisement_text__intro_buttons {
+.homepage__advertisement_text__intro_buttons,
+.homepage__banners_buttons {
   padding-top: 6%;
   text-align: end;
   margin-bottom: 40px;
@@ -454,6 +466,8 @@ h1 {
   margin-left: 4%;
   font-size: 1em;
   width: 30%;
+}
+.homepage__products_catalog {
 }
 .card_product {
   box-sizing: border-box;
@@ -488,4 +502,56 @@ h1 {
     font-size: 16px;
     margin-bottom: 0;
   }
+}
+@media screen and (min-width: 576px) {
+  .homepage__products_catalog__intro {
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .homepage__pet-sellers {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 80px;
+  }
+}
+.homepage__pet-sellers__intro_view-more {
+  width: 100%;
+}
+.homepage__dogs_catalog__intro_text-view {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: none;
+  color: black;
+}
+.pet-sellers {
+  font-size: 1.3em;
+  color: #003459;
+  font-weight: 700;
+}
+.homepage__pet-sellers__intro_btn-view {
+  width: max-content;
+  background-color: white;
+}
+.homepage__pet-sellers__sellers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.homepage__adoption {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #ffb775;
+  background-image: url(../pictures/homapage-adoption/left.png),
+    url(../pictures/homapage-adoption/right.png);
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+}
+.homepage__adoption_text {
+}
+.homepage__adoption_picture {
+  background-image: url(../pictures/dog-man-hands.png);
 }
