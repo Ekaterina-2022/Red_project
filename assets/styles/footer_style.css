@@ -19,7 +19,7 @@ body {
   display: block;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: fit-content;
   padding: 5% 1% 0 1%;
   background-color: #fceed5;
   border-radius: 20px 20px 0px 0px;
@@ -114,8 +114,12 @@ body {
   color: #667479;
   font-size: 12px;
 }
+.footer_copyright {
+  display: none;
+}
 @media screen and (min-width: 780px) {
   .footer {
+    padding: 1%;
   }
   .footer_reg {
     display: flex;
@@ -135,24 +139,52 @@ body {
   }
   .input_reg {
     width: 60%;
-    height: 2.5rem;
+    height: 2.2rem;
     margin: 2%;
+    font-size: 1rem;
   }
   .input_heading {
     font-size: 1rem;
   }
   .input_button {
     width: 30%;
-    height: 2.5rem;
+    height: 2.2rem;
     margin: 2%;
     padding: 0;
+    font-size: 1rem;
   }
   .contacts {
     display: flex;
     flex-direction: row;
   }
-  .footer__nav,
-  .footer_contacts {
+  .footer__nav {
     width: 20%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer_contacts {
+    display: flex;
+    width: 20%;
+    margin: 0;
+  }
+  .footer_copyright__text {
+    width: 30%;
+
+    display: flex;
+    color: #667479;
+  }
+  .footer__policy {
+    display: flex;
+    justify-content: center;
+
+    width: 30%;
+    margin: 2% auto;
+  }
+  .footer_logo {
+    width: 30%;
+    margin: 2% auto;
+    padding: 0%;
+    border: none;
   }
 }
