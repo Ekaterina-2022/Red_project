@@ -140,9 +140,10 @@ a:hover {
   background: #fceed5;
   padding-left: 10px;
 }
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 1099px) {
   .homepage__main_banner {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     box-sizing: border-box;
     margin: 0;
@@ -154,7 +155,7 @@ a:hover {
   width: 100%;
   background: #fceed5;
 }
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 1099px) {
   .homepage__main_banner__intro {
     width: 45%;
     background: #fceed5;
@@ -169,7 +170,7 @@ h1 {
   text-transform: capitalize;
   color: #002a48;
 }
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 1099px) {
   h1 {
     font-size: 3.25em;
     font-style: normal;
@@ -189,7 +190,7 @@ h1 {
   text-transform: capitalize;
   color: #002a48;
 }
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 1099px) {
   .homepage__main_banner__intro_promo {
     font-style: normal;
     font-weight: 600;
@@ -205,7 +206,7 @@ h1 {
   line-height: 1.5em;
   color: #242b33;
 }
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 1099px) {
   .homepage__main_banner__intro_text {
     font-weight: 500;
     font-size: 1.1em;
@@ -216,7 +217,7 @@ h1 {
 .homepage__main_banner__intro_buttons {
   padding-top: 5%;
 }
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 1099px) {
   .homepage__main_banner__intro_buttons {
     padding-top: 10%;
   }
@@ -233,7 +234,7 @@ h1 {
   border: 2px solid #003459;
   border-radius: 50px;
 }
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 1099px) {
   .homepage__main_banner__intro_buttons_view,
   .btn-view {
     width: 35%;
@@ -267,7 +268,7 @@ h1 {
   border: none;
   border-radius: 50px;
 }
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 1099px) {
   .homepage__main_banner__intro_buttons_explore,
   .btn-explore {
     width: 35%;
@@ -292,9 +293,10 @@ h1 {
   background-size: cover, cover, cover;
   background-repeat: no-repeat;
 }
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 1099px) {
   .homepage__main_banner__picture {
     width: 55%;
+    height: 100%;
     background: #fceed5;
     background-image: url(../pictures/good-humored-woman-holds-dog-laughing-pink.png),
       url(../pictures/homepage-mainbanner/square-beige-bottom-right.png),
@@ -568,10 +570,11 @@ h1 {
   background-position: top, bottom;
   border-radius: 20px;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 786px) {
   .homepage__advertisement,
   .homepage__banners {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     height: max-content;
     margin: 40px 80px;
@@ -589,10 +592,10 @@ h1 {
   height: 50%;
   padding-top: 15px;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 786px) {
   .homepage__advertisement_text,
   .homepage__banners_text {
-    width: 50%;
+    width: 60%;
     padding-top: 50px;
     padding-right: 80px;
   }
@@ -653,7 +656,7 @@ h1 {
   padding-left: 5px;
   padding-right: 5px;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 786px) {
   .homepage__advertisement_text__intro_text,
   .homepage__banners_text__intro_text {
     font-weight: 500;
@@ -666,7 +669,7 @@ h1 {
 }
 .homepage__advertisement_picture,
 .homepage__banners__picture {
-  width: 100%;
+  width: 40%;
   height: 40vh;
   background-image: url(../pictures/horizontal-shot-adult-girl-jeans.png);
   background-size: auto;
@@ -674,14 +677,16 @@ h1 {
   background-repeat: no-repeat;
   order: 1;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 786px) {
   .homepage__advertisement_picture,
   .homepage__banners__picture {
     width: 50%;
+    height: 50vh;
     background-image: url(../pictures/horizontal-shot-adult-girl-jeans.png);
-    background-size: contain;
-    background-position: bottom;
+    background-size: cover;
+    background-position: bottom bottom;
     background-repeat: no-repeat;
+    order: 0;
   }
 }
 .homepage__advertisement_text__intro_buttons,
