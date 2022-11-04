@@ -14,7 +14,7 @@
   cursor: pointer;
 }
 .button:hover {
-  box-shadow: 0 0 3px 3px #bbbebf;
+  box-shadow: 0 0 3px 1px #bbbebf;
 }
 .button_transparent {
   width: 250px;

@@ -1,0 +1,29 @@
+* {
+  font-family: "SVN-Gilroy", "Arial", sans-serif;
+  src: url("../fonts/SVN-GilroyBold.woff2"), url("../fonts/SVN-GilroyBold.woff");
+}
+.filter_gender,
+.filter_color {
+  margin: 2% 0;
+  font-size: 1.5rem;
+  color: #00171f;
+  font-weight: bold;
+}
+.filters_heading {
+  margin: 2% 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #003459;
+}
+@media screen and (min-width: 1180px) {
+}
+
+.filter_gender,
+.filter_color {
+  display: flex;
+}
+.input_gender,
+.input_color {
+  display: inline-block;
+  flex-wrap: wrap;
+}
