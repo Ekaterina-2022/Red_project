@@ -25,11 +25,16 @@ body {
   font-style: normal;
   font-weight: 700;
 }
-
+.overheader {
+  width: 100%;
+  background-color: #fceed5;
+  margin: 0;
+  padding-top: 20px;
+}
 .header {
   height: 100px;
   display: block;
-  margin: 20px;
+  margin-top: px;
 }
 a:hover {
   text-decoration: underline;
@@ -84,6 +89,7 @@ a:hover {
     display: none;
   }
 }
+
 @media screen and (min-width: 1180px) {
   .overheader {
     background: #fceed5;
@@ -127,55 +133,119 @@ a:hover {
 }
 .homepage__main_banner {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   box-sizing: border-box;
   margin: 0;
   height: 70vh;
   background: #fceed5;
+  padding-left: 10px;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__main_banner {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    height: 70vh;
+    background: #fceed5;
+  }
 }
 .homepage__main_banner__intro {
-  width: 45%;
+  width: 100%;
   background: #fceed5;
-  padding-left: 80px;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__main_banner__intro {
+    width: 45%;
+    background: #fceed5;
+    padding-left: 80px;
+  }
 }
 h1 {
-  font-size: 3.25em;
-  font-style: normal;
-  font-weight: 700;
-  height: auto;
   margin: 0;
-  padding-top: 80px;
+  font-size: 2.3em;
+  font-style: normal;
+  font-weight: 800;
   text-transform: capitalize;
   color: #002a48;
+}
+@media screen and (min-width: 1180px) {
+  h1 {
+    font-size: 3.25em;
+    font-style: normal;
+    font-weight: 700;
+    height: auto;
+    margin: 0;
+    padding-top: 80px;
+    text-transform: capitalize;
+    color: #002a48;
+  }
 }
 .homepage__main_banner__intro_promo {
   font-style: normal;
-  font-weight: 600;
-  font-size: 2.25em;
-  line-height: 60px;
+  font-weight: 700;
+  font-size: 1.85em;
+  line-height: 1.9em;
   text-transform: capitalize;
   color: #002a48;
 }
+@media screen and (min-width: 1180px) {
+  .homepage__main_banner__intro_promo {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.25em;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: #002a48;
+  }
+}
 .homepage__main_banner__intro_text {
   font-weight: 500;
-  font-size: 1.1em;
+  font-size: 0.9em;
   line-height: 1.5em;
   color: #242b33;
 }
+@media screen and (min-width: 1180px) {
+  .homepage__main_banner__intro_text {
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: #242b33;
+  }
+}
 .homepage__main_banner__intro_buttons {
-  padding-top: 10%;
+  padding-top: 5%;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__main_banner__intro_buttons {
+    padding-top: 10%;
+  }
 }
 .homepage__main_banner__intro_buttons_view,
 .btn-view {
-  width: 35%;
-  height: 8vh;
+  width: max-content;
+  height: max-content;
   text-align: center;
-  font-size: 1.1em;
+  font-size: 1em;
   color: #003459;
   padding: 9px 25px;
   background-color: #fceed5;
   border: 2px solid #003459;
   border-radius: 50px;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__main_banner__intro_buttons_view,
+  .btn-view {
+    width: 35%;
+    height: 8vh;
+    text-align: center;
+    font-size: 1.1em;
+    color: #003459;
+    padding: 9px 25px;
+    background-color: #fceed5;
+    border: 2px solid #003459;
+    border-radius: 50px;
+  }
 }
 .fa-circle-play {
   border: none;
@@ -185,10 +255,11 @@ h1 {
 }
 .homepage__main_banner__intro_buttons_explore,
 .btn-explore {
-  width: 35%;
-  height: 8vh;
+  width: max-content;
+  height: max-content;
+  line-height: 2.5em;
   text-align: center;
-  font-size: 1.1em;
+  font-size: 1em;
   color: white;
   padding: 9px 25px;
   margin-left: 10%;
@@ -196,15 +267,42 @@ h1 {
   border: none;
   border-radius: 50px;
 }
+@media screen and (min-width: 1180px) {
+  .homepage__main_banner__intro_buttons_explore,
+  .btn-explore {
+    width: 35%;
+    height: 8vh;
+    text-align: center;
+    font-size: 1.1em;
+    color: white;
+    padding: 9px 25px;
+    margin-left: 10%;
+    background-color: #003459;
+    border: none;
+    border-radius: 50px;
+  }
+}
 .homepage__main_banner__picture {
-  width: 55%;
-  background: #fceed5;
-  background-image: url(../pictures/good-humored-woman-holds-dog-laughing-pink.png),
+  width: 100%;
+  height: 60%;
+  background-color: #fceed5;
+  background-image: url(../pictures/mobile-pictures/good-humored-woman.png),
     url(../pictures/homepage-mainbanner/square-beige-bottom-right.png),
     url(../pictures/homepage-mainbanner/square-bluebottom-right.png);
-  background-size: cover, contain, contain;
+  background-size: cover, cover, cover;
   background-repeat: no-repeat;
-  background-position: right, bottom, bottom;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__main_banner__picture {
+    width: 55%;
+    background: #fceed5;
+    background-image: url(../pictures/good-humored-woman-holds-dog-laughing-pink.png),
+      url(../pictures/homepage-mainbanner/square-beige-bottom-right.png),
+      url(../pictures/homepage-mainbanner/square-bluebottom-right.png);
+    background-size: cover, contain, contain;
+    background-repeat: no-repeat;
+    background-position: right, bottom, bottom;
+  }
 }
 .homepage__dogs_catalog,
 .homepage__catalogs {
@@ -212,8 +310,19 @@ h1 {
   height: max-content;
   display: flex;
   flex-wrap: wrap;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__dogs_catalog,
+  .homepage__catalogs {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 .homepage__dogs_catalog__intro,
 .homepage__catalogs__intro {
@@ -221,12 +330,29 @@ h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 60px;
+  padding-top: 40px;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__dogs_catalog__intro,
+  .homepage__catalogs__intro {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 60px;
+  }
 }
 .homepage__catalogs__intro_question,
 .homepage__dogs_catalog__intro_question {
   width: 100%;
   font-weight: 500;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__catalogs__intro_question,
+  .homepage__dogs_catalog__intro_question {
+    width: 100%;
+    font-weight: 500;
+  }
 }
 .homepage__dogs_catalog__intro_view-more,
 .homepage__catalogs__intro_view-more {
@@ -238,22 +364,39 @@ h1 {
 .homepage__catalogs__intro_text-view {
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1em;
   line-height: 36px;
   text-transform: capitalize;
   color: #003459;
 }
+@media screen and (min-width: 1180px) {
+  .homepage__dogs_catalog__intro_text-view,
+  .homepage__catalogs__intro_text-view {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: #003459;
+  }
+}
 .homepage__dogs_catalog__intro_btn-view,
 .homepage-catalogs__btn_view {
-  width: 150px;
-  text-align: center;
-  font-size: 0.9em;
-  color: #003459;
-  line-height: 3em;
-  margin-bottom: 10px;
-  background-color: white;
-  border: 2px solid #003459;
-  border-radius: 50px;
+  display: none;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__dogs_catalog__intro_btn-view,
+  .homepage-catalogs__btn_view {
+    width: 150px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #003459;
+    line-height: 3em;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 2px solid #003459;
+    border-radius: 50px;
+  }
 }
 .fa-arrow-right {
   padding: 8px;
@@ -262,11 +405,20 @@ h1 {
 }
 .homepage__dogs_catalog__card_dogs,
 .homepage__catalog__cards {
-  height: 90%;
+  height: max-content;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: stretch;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__dogs_catalog__card_dogs,
+  .homepage__catalog__cards {
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
 }
 .card_dog {
   box-sizing: border-box;
@@ -275,6 +427,7 @@ h1 {
   box-shadow: 0px 0px 13px 0px #c3caca;
   min-width: 185px;
   min-height: 317px;
+  height: max-content;
   width: 45vw;
   height: 38%;
 }
@@ -289,6 +442,7 @@ h1 {
 .card-dog__image,
 .card__img {
   width: 100%;
+  height: 100%;
 }
 @media screen and (min-width: 576px) {
   .card-dog__image,
@@ -404,42 +558,90 @@ h1 {
 .homepage__advertisement,
 .homepage__banners {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   height: max-content;
-  margin: 40px 80px;
+  margin: 10px 10px;
   background-color: #003459;
-  background-image: url(../pictures/homepage-mainbanner/homepage-adv-banner-blue.png),
-    url(../pictures/homepage-mainbanner/homepage-adv-banner-pink.png);
+  background-image: url(../pictures/mobile-pictures/pink-top.png),
+    url(../pictures/mobile-pictures/blue-bottom.png);
   background-repeat: no-repeat;
-  background-position: left bottom, right top;
+  background-position: top, bottom;
   border-radius: 20px;
+}
+@media screen and (min-width: 576px) {
+  .homepage__advertisement,
+  .homepage__banners {
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+    margin: 40px 80px;
+    background-color: #003459;
+    background-image: url(../pictures/homepage-mainbanner/homepage-adv-banner-blue.png),
+      url(../pictures/homepage-mainbanner/homepage-adv-banner-pink.png);
+    background-repeat: no-repeat;
+    background-position: left bottom, right top;
+    border-radius: 20px;
+  }
 }
 .homepage__advertisement_text,
 .homepage__banners_text {
-  width: 50%;
-  padding-top: 50px;
-  padding-right: 80px;
+  width: 100%;
+  height: 50%;
+  padding-top: 15px;
+}
+@media screen and (min-width: 576px) {
+  .homepage__advertisement_text,
+  .homepage__banners_text {
+    width: 50%;
+    padding-top: 50px;
+    padding-right: 80px;
+  }
 }
 .homepage__advertisement_text_promo,
 .homepage__banners_text_promo {
-  font-size: 3em;
+  font-size: 2em;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   height: auto;
   margin: 0;
   text-transform: capitalize;
   color: #002a48;
-  text-align: right;
+  text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .homepage__advertisement_text_promo,
+  .homepage__banners_text_promo {
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 700;
+    height: auto;
+    margin: 0;
+    text-transform: capitalize;
+    color: #002a48;
+    text-align: right;
+  }
 }
 .homepage__advertisement_text__intro_promo,
 .homepage__banners_text__intro_promo {
   font-style: normal;
   font-weight: 600;
-  font-size: 1.75em;
+  font-size: 1.6em;
   line-height: 60px;
   text-transform: capitalize;
   color: #002a48;
-  text-align: right;
+  text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .homepage__advertisement_text__intro_promo,
+  .homepage__banners_text__intro_promo {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.75em;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: #002a48;
+    text-align: right;
+  }
 }
 .homepage__advertisement_text__intro_text,
 .homepage__banners_text__intro_text {
@@ -447,16 +649,40 @@ h1 {
   font-size: 0.9em;
   line-height: 1.5em;
   color: #242b33;
-  text-align: right;
-  padding-left: 120px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+@media screen and (min-width: 576px) {
+  .homepage__advertisement_text__intro_text,
+  .homepage__banners_text__intro_text {
+    font-weight: 500;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    color: #242b33;
+    text-align: right;
+    padding-left: 120px;
+  }
 }
 .homepage__advertisement_picture,
 .homepage__banners__picture {
-  width: 50%;
+  width: 100%;
+  height: 40vh;
   background-image: url(../pictures/horizontal-shot-adult-girl-jeans.png);
-  background-size: contain;
-  background-position: bottom;
+  background-size: auto;
+  background-position: center;
   background-repeat: no-repeat;
+  order: 1;
+}
+@media screen and (min-width: 576px) {
+  .homepage__advertisement_picture,
+  .homepage__banners__picture {
+    width: 50%;
+    background-image: url(../pictures/horizontal-shot-adult-girl-jeans.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
 }
 .homepage__advertisement_text__intro_buttons,
 .homepage__banners_buttons {
@@ -465,15 +691,31 @@ h1 {
   margin-bottom: 40px;
 }
 .homepage__advertisement_text__intro_buttons_view {
-  font-size: 1em;
-  width: 30%;
+  font-size: 0.9em;
+  width: max-content;
+  height: fit-content;
 }
 .homepage__advertisement_text__intro_buttons_explore {
-  margin-left: 4%;
-  font-size: 1em;
-  width: 30%;
+  margin-right: 2%;
+  font-size: 0.9em;
+  line-height: 3em;
+  width: 40%;
 }
-.homepage__products_catalog {
+@media screen and (min-width: 576px) {
+  .homepage__advertisement_text__intro_buttons_view {
+    font-size: 1em;
+    width: 30%;
+  }
+  .homepage__advertisement_text__intro_buttons_explore {
+    margin-left: 4%;
+    font-size: 1em;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 786px) {
+  .homepage__products_catalog {
+    display: none;
+  }
 }
 .card_product {
   box-sizing: border-box;
@@ -520,10 +762,6 @@ h1 {
   }
 }
 @media screen and (min-width: 576px) {
-  .product__dot {
-  }
-}
-@media screen and (min-width: 576px) {
   .free-toy-shaker__text::before {
     content: "";
     color: #00171f;
@@ -549,7 +787,12 @@ h1 {
     padding-top: 20px;
   }
 }
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 786px) {
+  .homepage__pet-sellers {
+    display: none;
+  }
+}
+@media screen and (min-width: 787px) {
   .homepage__pet-sellers {
     display: flex;
     flex-wrap: wrap;
@@ -582,14 +825,21 @@ h1 {
   align-items: center;
   width: 100%;
 }
-.homepage__adoption {
-  display: flex;
-  flex-wrap: nowrap;
-  background-color: #ffb775;
-  background-image: url(../pictures/homapage-adoption/left.png),
-    url(../pictures/homapage-adoption/right.png);
-  background-repeat: no-repeat;
-  background-position: left top, right bottom;
+@media screen and (max-width: 786px) {
+  .homepage__adoption {
+    display: none;
+  }
+}
+@media screen and (min-width: 787px) {
+  .homepage__adoption {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #ffb775;
+    background-image: url(../pictures/homapage-adoption/left.png),
+      url(../pictures/homapage-adoption/right.png);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+  }
 }
 .homepage__adoption_text {
   width: 60%;
@@ -615,9 +865,24 @@ h1 {
 .homepage__adoption_picture {
   background-image: url(../pictures/dog-man-hands.png);
 }
+.homepage__knowledge__articles {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 787px) {
+  .homepage__knowledge__articles {
+    flex-direction: row;
+  }
+}
 .homepage__knowledge__article {
-  width: 32%;
-  height: 43%;
+  width: 100%;
+  height: fit-content;
+}
+@media screen and (min-width: 787px) {
+  .homepage__knowledge__article {
+    width: 32%;
+    height: 43%;
+  }
 }
 .pet-knowledge-teg {
   width: fit-content;
