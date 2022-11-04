@@ -45,6 +45,7 @@
   background-color: #ffe7ba;
   background-image: url(../pictures/category-blue-bottom.png);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: bottom right;
   border-radius: 20px;
 }
@@ -293,8 +294,6 @@
   width: 100%;
   align-items: center;
   flex-wrap: wrap;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 @media screen and (min-width: 1099px) {
   .categorypage__filters_dogs__head {
@@ -309,7 +308,6 @@
   line-height: 36px;
   color: #003459;
   order: 1;
-  width: 40%;
 }
 @media screen and (min-width: 1099px) {
   .categorypage__filters_dogs__head_sort {
@@ -336,6 +334,7 @@
 }
 .categorypage__filters_dogs__head_choose {
   width: 60%;
+
   font-weight: 500;
   font-size: 14px;
 }
@@ -348,10 +347,6 @@
 }
 #sort {
   color: #667479;
-  border-radius: 10px;
-}
-.icon_filter {
-  margin-left: auto;
 }
 @media screen and (min-width: 1099px) {
   .icon_filter {
