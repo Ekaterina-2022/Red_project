@@ -7,10 +7,6 @@
 }
 body {
   width: 100%;
-  font-family: "SVN-Gilroy", "Arial", sans-serif;
-  src: url("../fonts/SVN-GilroyBold.woff2"), url("../fonts/SVN-GilroyBold.woff");
-  font-style: normal;
-  font-weight: 700;
 }
 @font-face {
   font-family: "SVN-Gilroy", "Arial", sans-serif;
@@ -209,6 +205,9 @@ span {
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.footer {
+  background-color: #fceed5;
 }
 @media screen and (min-width: 576px) {
 }
