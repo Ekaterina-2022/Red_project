@@ -65,6 +65,7 @@ body {
 }
 .input_button {
   margin: 1% 4% 5% 4%;
+  cursor: pointer;
 }
 .input_reg {
   margin: 5% 5% 1% 5%;
