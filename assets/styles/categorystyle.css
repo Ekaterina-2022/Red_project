@@ -1,0 +1,656 @@
+.categorypage__nav {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  gap: 20px;
+}
+@media screen and (min-width: 786px) {
+  .categorypage__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+.categorypage__nav_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+  width: max-content;
+  color: #667479;
+}
+.categorypage__nav_item:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid currentColor;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: currentcolor;
+  border-right: 2px solid currentColor;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: currentcolor;
+  transform: rotate(45deg);
+  opacity: 0.8;
+}
+.homepage__advertisement,
+.homepage__banners {
+  display: flex;
+  flex-direction: column;
+  min-height: 40vh;
+  height: max-content;
+  margin: 10px 10px;
+  background-color: #ffe7ba;
+  background-image: url(../pictures/category-blue-bottom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+  border-radius: 20px;
+}
+@media screen and (min-width: 786px) {
+  .homepage__advertisement,
+  .homepage__banners {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: max-content;
+    background-image: url(../pictures/category-blue-right.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 20px;
+  }
+}
+.homepage__advertisement_text,
+.homepage__banners_text {
+  width: 100%;
+  height: 50%;
+  padding-top: 15px;
+}
+@media screen and (min-width: 786px) {
+  .homepage__advertisement_text,
+  .homepage__banners_text {
+    width: 45%;
+    padding-top: 50px;
+    padding-right: 80px;
+  }
+}
+.homepage__advertisement_text_promo,
+.homepage__banners_text_promo {
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 800;
+  height: auto;
+  margin: 0;
+  text-transform: capitalize;
+  color: #002a48;
+  text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .homepage__advertisement_text_promo,
+  .homepage__banners_text_promo {
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 700;
+    height: auto;
+    margin: 0;
+    text-transform: capitalize;
+    color: #fdfdfd;
+    text-align: right;
+  }
+}
+.homepage__advertisement_text__intro_promo,
+.homepage__banners_text__intro_promo {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6em;
+  line-height: 60px;
+  text-transform: capitalize;
+  color: #002a48;
+  text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .homepage__advertisement_text__intro_promo,
+  .homepage__banners_text__intro_promo {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.75em;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: #fdfdfd;
+    text-align: right;
+  }
+}
+.homepage__advertisement_text__intro_text,
+.homepage__banners_text__intro_text {
+  font-weight: 500;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  color: #002a48;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+@media screen and (min-width: 786px) {
+  .homepage__advertisement_text__intro_text,
+  .homepage__banners_text__intro_text {
+    font-weight: 500;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    color: #fdfdfd;
+    text-align: right;
+    padding-left: 120px;
+  }
+}
+.homepage__advertisement_picture,
+.homepage__banners__picture {
+  width: 100%;
+  height: 20vh;
+  background-image: url(../pictures/group-portrait-adorable-puppies\ 1.png);
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  order: 1;
+}
+@media screen and (min-width: 786px) {
+  .homepage__advertisement_picture,
+  .homepage__banners__picture {
+    width: 55%;
+    height: 50vh;
+    background-image: url(../pictures/group-portrait-adorable-puppies\ 1.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    order: 0;
+  }
+}
+.homepage__advertisement_text__intro_buttons,
+.homepage__banners_buttons {
+  padding-top: 6%;
+  text-align: center;
+}
+@media screen and (min-width: 786px) {
+  .homepage__advertisement_text__intro_buttons,
+  .homepage__banners_buttons {
+    padding-top: 6%;
+    text-align: end;
+    margin-bottom: 40px;
+  }
+}
+.homepage__advertisement_text__intro_buttons_view {
+  font-size: 0.9em;
+  width: max-content;
+  height: fit-content;
+}
+.homepage__advertisement_text__intro_buttons_explore {
+  margin-right: 2%;
+  font-size: 0.9em;
+  line-height: 3em;
+  width: 40%;
+  background-color: #fdfdfd;
+}
+@media screen and (min-width: 576px) {
+  .homepage__advertisement_text__intro_buttons_view {
+    font-size: 1em;
+    width: 30%;
+  }
+  .homepage__advertisement_text__intro_buttons_explore {
+    margin-left: 4%;
+    font-size: 1em;
+    width: 30%;
+    background: #fdfdfd;
+  }
+}
+.homepage__main_banner__intro_buttons_view,
+.btn-view {
+  width: max-content;
+  height: max-content;
+  text-align: center;
+  font-size: 1em;
+  color: #fdfdfd;
+  padding: 9px 25px;
+  background-color: #002a48;
+  border: 1.5px solid #fdfdfd;
+  border-radius: 50px;
+}
+@media screen and (min-width: 1099px) {
+  .homepage__main_banner__intro_buttons_view,
+  .btn-view {
+    width: 35%;
+    height: 8vh;
+    text-align: center;
+    font-size: 1em;
+    color: #fdfdfd;
+    padding: 9px 25px;
+    background-color: #002a48;
+    border: 1.5px solid #fdfdfd;
+    border-radius: 50px;
+  }
+}
+.fa-circle-play {
+  border: none;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.homepage__main_banner__intro_buttons_explore,
+.btn-explore {
+  width: max-content;
+  height: max-content;
+  line-height: 2.5em;
+  text-align: center;
+  font-size: 1em;
+  color: #00171f;
+  padding: 9px 25px;
+  margin-left: 10%;
+  background-color: #fdfdfd;
+  border: none;
+  border-radius: 50px;
+}
+@media screen and (min-width: 1099px) {
+  .homepage__main_banner__intro_buttons_explore,
+  .btn-explore {
+    width: 35%;
+    height: 8vh;
+    text-align: center;
+    font-size: 1em;
+    color: #00171f;
+    padding: 9px 25px;
+    margin-left: 10%;
+    background-color: #fdfdfd;
+    border: none;
+    border-radius: 50px;
+  }
+}
+.categorypage__filters {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.categorypage__filters_filter {
+  display: none;
+}
+@media screen and (min-width: 1099px) {
+  .categorypage__filters_filter {
+    display: flex;
+    width: 25%;
+  }
+}
+.categorypage__filters_dogs {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1099px) {
+  .categorypage__filters_dogs {
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+  }
+}
+.categorypage__filters_dogs__head {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1099px) {
+  .categorypage__filters_dogs__head {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+}
+.categorypage__filters_dogs__head_sort {
+  font-weight: 700;
+  font-size: 1.7em;
+  line-height: 36px;
+  color: #003459;
+  order: 1;
+}
+@media screen and (min-width: 1099px) {
+  .categorypage__filters_dogs__head_sort {
+    font-weight: 700;
+    font-size: 1.7em;
+    line-height: 36px;
+    color: #003459;
+  }
+}
+.categorypage__filters_dogs__head_amount {
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #667479;
+  order: 2;
+}
+@media screen and (min-width: 1099px) {
+  .categorypage__filters_dogs__head_amount {
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: #667479;
+  }
+}
+.categorypage__filters_dogs__head_choose {
+  width: 60%;
+
+  font-weight: 500;
+  font-size: 14px;
+}
+@media screen and (min-width: 1099px) {
+  .categorypage__filters_dogs__head_choose {
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+#sort {
+  color: #667479;
+}
+@media screen and (min-width: 1099px) {
+  .icon_filter {
+    display: none;
+  }
+}
+.categorypage__filters_dogs__dogs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.homepage__dogs_catalog,
+.homepage__catalogs {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media screen and (min-width: 1099px) {
+  .homepage__dogs_catalog,
+  .homepage__catalogs {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+.homepage__dogs_catalog__intro,
+.homepage__catalogs__intro {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__dogs_catalog__intro,
+  .homepage__catalogs__intro {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 60px;
+  }
+}
+.homepage__catalogs__intro_question,
+.homepage__dogs_catalog__intro_question {
+  width: 100%;
+  font-weight: 500;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__catalogs__intro_question,
+  .homepage__dogs_catalog__intro_question {
+    width: 100%;
+    font-weight: 500;
+  }
+}
+.homepage__dogs_catalog__intro_view-more,
+.homepage__catalogs__intro_view-more {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.homepage__dogs_catalog__intro_text-view,
+.homepage__catalogs__intro_text-view {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 36px;
+  text-transform: capitalize;
+  color: #003459;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__dogs_catalog__intro_text-view,
+  .homepage__catalogs__intro_text-view {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: #003459;
+  }
+}
+.homepage__dogs_catalog__intro_btn-view,
+.homepage-catalogs__btn_view {
+  display: none;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__dogs_catalog__intro_btn-view,
+  .homepage-catalogs__btn_view {
+    width: 150px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #003459;
+    line-height: 3em;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 2px solid #003459;
+    border-radius: 50px;
+  }
+}
+.fa-arrow-right {
+  padding: 8px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+.homepage__dogs_catalog__card_dogs,
+.homepage__catalog__cards {
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__dogs_catalog__card_dogs,
+  .homepage__catalog__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.card_dog {
+  box-sizing: border-box;
+  border: 8px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 13px 0px #c3caca;
+  min-width: 185px;
+  min-height: 317px;
+  height: max-content;
+  width: 45vw;
+  height: 38%;
+}
+@media screen and (min-width: 576px) {
+  .card_dog {
+    height: max-content;
+    width: 30%;
+    border-bottom: none;
+    margin-bottom: 1%;
+  }
+}
+.card-dog__image,
+.card__img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__image,
+  .card__img {
+    height: 100%;
+  }
+}
+.card-dog__text {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text {
+    height: 26%;
+    margin-top: 8px;
+  }
+}
+.card-dog__text_header,
+.homepage__catalog__text_header {
+  height: 40%;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 4px;
+  color: #00171f;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text_header,
+  .homepage__catalog__text_header {
+    height: 30%;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}
+.card-dog__text_features {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 30%;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text_features {
+    flex-direction: row;
+    height: 25%;
+    margin-bottom: 0;
+  }
+}
+.card-dog__text_feature__gender {
+  display: flex;
+  color: #667479;
+  margin-bottom: 4px;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text_feature__gender {
+    margin-bottom: 0;
+  }
+}
+.card-dog__text_feature__gender-gene {
+  justify-content: flex-start;
+  line-height: 18px;
+  font-weight: 500;
+}
+.card-dog__text_feature__gender-name {
+  padding-left: 4px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.card-dog__text_features-dot {
+  display: none;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text_features-dot {
+    display: flex;
+    padding-left: 25px;
+    color: #667479;
+  }
+}
+.card-dog__text_feature__ages {
+  display: flex;
+  color: #667479;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text_feature__ages::before {
+    content: "";
+    color: #00171f;
+  }
+}
+.card-dog__text_feature__ages-age {
+  line-height: 18px;
+  font-weight: 500;
+}
+.card-dog__text_feature__ages-years {
+  padding-left: 4px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.card-dog__text_price {
+  height: 30%;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00171f;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text_price {
+    font-size: 14px;
+  }
+}
+.filter__dogs_nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 5%;
+  height: 10vh;
+  align-items: center;
+}
+.cards__amount:first-of-type::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid currentColor;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: currentcolor;
+  border-right: 2px solid currentColor;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: currentcolor;
+  transform: rotate(220deg);
+  padding-top: 5px;
+}
+
+.cards__amount:last-of-type::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid currentColor;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: currentcolor;
+  border-right: 2px solid currentColor;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: currentcolor;
+  transform: rotate(45deg);
+  padding-top: 5px;
+}
+
+.cards__amount {
+  color: #002a48;
+}

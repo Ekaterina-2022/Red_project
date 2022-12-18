@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.slider-dog {
+  height: 350px;
+  margin: 100px auto 0;
+  position: relative;
+  width: 700px;
+}
+.slider-dog__slides {
+  background-color: #ddd;
+  height: inherit;
+  overflow: hidden;
+  position: relative;
+  width: inherit;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.slider-dog__img {
+  height: inherit;
+  position: absolute;
+  width: inherit;
+}
+
+.slide_1 {
+  background-image: url(../images/image4.jpg);
+}
+.slide_2 {
+  background-image: url(../images/image5.jpg);
+}
+.slide_3 {
+  background-image: url(../images/image6.jpg);
+}
+.slide_4 {
+  background-image: url(../images/image7.jpg);
+}
+.slide_5 {
+  background-image: url(../images/image9.jpg);
+}
+.slider-dog__controls {
+  left: 50%;
+  margin-left: -98px;
+  position: absolute;
+}
+
+.slider-dog label {
+  cursor: pointer;
+  display: inline-block;
+  height: 8px;
+  margin: 25px 12px 0 16px;
+  position: relative;
+  width: 8px;
+  border-radius: 50%;
+}
+
+.slider-dog .slider-dog__label::after {
+  border: 2px solid #ddd;
+  content: " ";
+  display: block;
+  height: 12px;
+  left: -4px;
+  position: absolute;
+  top: -4px;
+  width: 12px;
+  border-radius: 50%;
+}
+.wrapper .slider-dog__label {
+  cursor: pointer;
+  display: inline-block;
+  height: 8px;
+  margin: 25px 12px 0 16px;
+  position: relative;
+  width: 8px;
+  border-radius: 50%;
+
+  transition: background ease-in-out 0.5s;
+}
+
+.slider-dog label:hover,
+#slide-1:checked ~ .controls label:nth-of-type(1),
+#slide-2:checked ~ .controls label:nth-of-type(2),
+#slide-3:checked ~ .controls label:nth-of-type(3),
+#slide-4:checked ~ .controls label:nth-of-type(4),
+#slide-5:checked ~ .controls label:nth-of-type(5) {
+  background: #ddd;
+}

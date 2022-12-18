@@ -7,21 +7,25 @@
 }
 body {
   width: 100%;
+}
+@font-face {
   font-family: "SVN-Gilroy", "Arial", sans-serif;
   src: url("../fonts/SVN-GilroyBold.woff2"), url("../fonts/SVN-GilroyBold.woff");
   font-style: normal;
   font-weight: 700;
+  color: #003459;
 }
-
 .header {
-  height: 100px;
+  width: 100%;
+  height: fit-content;
   display: block;
-  margin: 20px;
 }
 a:hover {
   text-decoration: underline;
 }
-
+span {
+  color: #003459;
+}
 .header__logo {
   display: flex;
   justify-content: space-between;
@@ -39,7 +43,7 @@ a:hover {
   width: 2.1rem;
 }
 .header__logo_major {
-  width: 6rem;
+  width: 8rem;
 }
 .header__button,
 .header__form,
@@ -55,24 +59,285 @@ a:hover {
   background-color: #003459;
   border: none;
   border-radius: 50px;
+  margin-right: 2%;
+  cursor: pointer;
+}
+.section,
+.section-productscroll {
+  width: 100%;
+}
+.section-productscroll__img {
+  width: 100%;
+}
+
+.section__scroll {
+  width: 100%;
+  height: 500px;
+  background-image: url("../images/image2.jpg");
+  background-size: cover;
+}
+.section__images {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+
+  margin: 3% 0 3% 3%;
+}
+.section__images_list {
+  width: 3.9rem;
+}
+.nav-way {
+  width: 90%;
+  margin: 5%;
+}
+.nav-way__link {
+  color: #667479;
+  font-size: 0.7rem;
+  font-weight: lighter;
+  margin: 1%;
+}
+.article {
+  width: 90%;
+  margin: 1rem;
+  display: block;
+  flex-direction: row;
+  background-color: #fceed5;
+  border-radius: 25px;
+  font-size: 0.6em;
+}
+.article__column,
+.profile__text {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.9rem;
+  padding: 10px;
+}
+.article__text {
+  font-size: 0.9rem;
+  padding-left: 10px;
+  color: #002a48;
+}
+.adress_social {
+  display: none;
+}
+.profile {
+  margin: 5%;
+}
+.profile__info {
+  color: #00171f;
+}
+.profile-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 3% 0;
+}
+.profile-buttons__chat,
+.profile-buttons__contact {
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1rem;
+}
+.profile-buttons__chat {
+  width: 200px;
+  align-self: flex-end;
+  background-color: white;
+  border: 2px solid #003459;
+  color: #003459;
+  font-weight: 700;
+}
+
+.profile__list {
+  font-size: 1rem;
+  float: left;
+}
+.profile__share {
+  display: flex;
+  justify-content: flex-end;
+}
+.profile__share_img {
+  width: 3.5em;
+}
+.profile__container {
+  width: 90%;
+
+  display: block;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.6em;
+  text-align: left;
+  border-bottom: 1px solid #dddfe0;
+  margin: 1% 2%;
+  padding: 0;
+}
+.profile__text {
+  width: 48%;
+  font-weight: lighter;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 10px 0;
+  color: #667479;
+}
+
+.profile__text ::before {
+  content: ":";
+}
+.aside-card,
+.section-customer {
+  margin: 2%;
+}
+.section-customer__img {
+  width: 100%;
+  border-radius: 2em;
+}
+.section-customer__img_unseen {
+  display: none;
+}
+.aside-card__heading,
+.section-customer__heading {
+  font-size: 2rem;
+  margin-bottom: 3%;
+  color: #003459;
+}
+.aside-card__container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.footer {
+  background-color: #fceed5;
+}
+@media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 780px) {
+  .header {
+    width: 90%;
+    margin: 2% 5%;
+    background-image: none;
+  }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+  }
   .header__nav {
     display: flex;
     justify-content: space-between;
-    width: 20em;
-    margin-left: 20px;
+    width: 20rem;
+    margin-left: 5%;
   }
   .header__nav_link {
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: #003459;
+    margin: 5%;
   }
   .header__burger {
     display: none;
   }
+  .section {
+    width: 90%;
+    margin-right: 5%;
+    display: inline;
+  }
+  .section-productscroll {
+    grid-area: section-productscroll;
+    width: 80%;
+  }
+
+  .section__images {
+    width: 100%;
+    margin-left: -2%;
+  }
+
+  .section__images_list {
+    display: flex;
+    justify-content: space-between;
+
+    width: 17%;
+    margin: 1%;
+  }
+  .profile__container {
+    margin: 2% 0;
+  }
+  .profile__share_img {
+    width: 6rem;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 50% 35% 15%;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:
+      "section-productscroll section-profile-dog ."
+      "section-productscroll section-profile-dog ."
+      "section-productscroll section-profile-dog ."
+      "section-productscroll section-profile-dog ."
+      "article section-profile-dog ."
+      "section-customer section-customer section-customer"
+      "aside-card aside-card aside-card";
+    width: 90%;
+    margin: 2% 5%;
+  }
+  .section-profile-dog {
+    grid-area: section-profile-dog;
+  }
+  .article {
+    width: 80%;
+    grid-area: article;
+    margin: 1% 0;
+    padding: 0;
+    border-radius: 10px;
+  }
+  .article__text {
+    font-size: 0.8rem;
+  }
+  .adress {
+    display: flex;
+  }
+  .adress_social_img {
+    width: 3%;
+    margin: 2%;
+  }
+  .adress_social_share {
+    width: 10%;
+  }
+  .section-customer {
+    grid-area: section-customer;
+  }
+  .aside-card {
+    grid-area: aside-card;
+  }
+  .profile__text {
+    font-size: 1.1rem;
+  }
+  .nav-way {
+    margin-top: 0;
+  }
+  .nav-way__link {
+    font-size: 1rem;
+  }
+  .profile__list,
+  .profile__share,
+  .card-dog_unseen {
+    display: none;
+  }
+  .section-customer,
+  .aside-card {
+    margin: 2% 0;
+  }
+  .section-customer__photos {
+    display: flex;
+    justify-content: space-between;
+  }
+  .section-customer__img,
+  .section-customer__img_unseen {
+    display: flex;
+    width: 19%;
+  }
 }
+
 @media screen and (min-width: 1180px) {
-  body {
+  .header {
     width: 90%;
     margin-left: 5%;
   }
@@ -81,6 +346,11 @@ a:hover {
   }
   .header__button {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    width: 180px;
+    height: 50px;
   }
   .header__nav {
     display: flex;
@@ -89,6 +359,7 @@ a:hover {
   .header__select {
     display: flex;
   }
+
   .header__select {
     padding: 10px;
     border: none;
@@ -104,5 +375,8 @@ a:hover {
     border: none;
     padding: 5px 5px 5px 25px;
     font-size: 1rem;
+  }
+  .profile__list {
+    font-size: 2rem;
   }
 }

@@ -1,0 +1,73 @@
+@media screen and (min-width: 1180px) {
+  .categorypage__filters_filter {
+    padding-left: 1%;
+  }
+  .filter_gender,
+  .filter_color,
+  .filters_price,
+  .filter_breed {
+    margin: 2% 0;
+    font-size: 1.2rem;
+    color: #00171f;
+    font-weight: bolder;
+  }
+  .filters_heading {
+    margin: 15% 0;
+    font-size: 2rem;
+    color: #003459;
+    font-weight: bolder;
+  }
+  .categorypage__filters > * {
+    font-weight: lighter;
+  }
+  .categorypage__filters_filter__head {
+    margin: 3% 0;
+    padding: 3% 0;
+    border: none;
+  }
+  .filter_gender,
+  .filter_color,
+  .filters_price,
+  .filter_breed {
+    display: flex;
+  }
+  .filter_gender,
+  .filters_price,
+  .filter_breed {
+    margin: 20% 0;
+  }
+  .input_gender,
+  .input_color,
+  .price_dogs,
+  .input_breed {
+    display: inline-block;
+    flex-wrap: wrap;
+    margin: 5% 0;
+  }
+  .filter__price-dog,
+  .filter__breed-dog,
+  .filter__gender-dog {
+    max-width: 45%;
+    margin: 2% 0;
+    padding: 2%;
+    border-bottom: 1px solid #c3cccf;
+  }
+  .filter__colors-dog {
+    margin: 2% 0;
+    padding: 2%;
+    border-bottom: 1px solid #c3cccf;
+  }
+  .color-wrapper {
+    width: 100%;
+  }
+  .input_gender {
+    display: inline;
+  }
+  .filter_colorwrap {
+    display: block;
+    flex-direction: column;
+  }
+  .filter_color__circle {
+    margin: 0 2%;
+  }
+}

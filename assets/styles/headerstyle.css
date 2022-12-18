@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-family: "SVN-Gilroy", "Arial", sans-serif;
+  src: url("../fonts/SVN-GilroyBold.woff2"), url("../fonts/SVN-GilroyBold.woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+.header {
+  height: 100px;
+  display: block;
+  margin: 20px;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header__nav {
+  display: none;
+}
+
+.header__burger {
+  width: 2.1rem;
+}
+.header__search {
+  width: 2.1rem;
+}
+.header__logo_major {
+  width: 6rem;
+}
+.header__button,
+.header__form,
+.header__select {
+  display: none;
+}
+.button {
+  width: 150px;
+  text-align: center;
+  font-size: 0.7em;
+  color: white;
+  padding: 9px 25px;
+  background-color: #003459;
+  border: none;
+  border-radius: 50px;
+}
+@media screen and (min-width: 780px) {
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 25em;
+    margin-left: 70px;
+  }
+  .header__nav_link {
+    font-size: 1rem;
+    color: #003459;
+  }
+  .header__burger {
+    display: none;
+  }
+}
+@media screen and (min-width: 1180px) {
+  body {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .header__links {
+    display: none;
+  }
+  .header__button {
+    display: flex;
+  }
+  .header__nav {
+    display: flex;
+  }
+  .header__form,
+  .header__select {
+    display: flex;
+  }
+  .header__select {
+    padding: 10px;
+    border: none;
+  }
+  form {
+    width: 200px;
+    margin: 0 auto;
+  }
+  .header__input {
+    background: url(../logo/magnifier.png) left no-repeat;
+    padding-left: 30px;
+    background-size: 15px;
+    border: none;
+    padding: 5px 5px 5px 25px;
+    font-size: 1rem;
+  }
+}

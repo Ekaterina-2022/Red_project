@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Monito</title>
+    <title>Monito Product detail</title>
     <link rel="stylesheet" href="assets/styles/normalize.css" />
     <link rel="stylesheet" href="assets/styles/productdetailstyle.css" />
+    <link rel="stylesheet" href="assets/styles/footer_style.css" />
+
+    <link rel="stylesheet" href="card_dog/assets/style_card_dog.css" />
     <link
       rel="shortcut icon"
       href="https://cdn-icons-png.flaticon.com/512/6462/6462524.png"
@@ -18,24 +21,25 @@
         <div class="header__logo">
           <a class="header__links" href="#">
             <img
-              class="header__burger link"
+              class="header__burger"
               src="assets/logo/burger.svg"
               alt="logo nav"
             />
           </a>
           <a href="#">
             <img
-              class="header__logo_major link"
+              class="header__logo_major"
               src="assets/logo/Group.svg"
               alt="logo Monito"
             />
-            <nav class="header__nav">
-              <a class="header__nav_link" href="#">Home</a>
-              <a class="header__nav_link" href="#">Category</a>
-              <a class="header__nav_link" href="#">About</a>
-              <a class="header__nav_link" href="#">Contact</a>
-            </nav>
           </a>
+          <nav class="header__nav">
+            <a class="header__nav_link" href="#">Home</a>
+            <a class="header__nav_link" href="#">Category</a>
+            <a class="header__nav_link" href="#">About</a>
+            <a class="header__nav_link" href="#">Contact</a>
+          </nav>
+
           <form class="header__form">
             <input
               class="header__input"
@@ -47,10 +51,10 @@
             Join the community
           </button>
           <select class="header__select header__select_cur">
-            <option value="1" selected>USD</option>
+            <option value="1" selected>VND</option>
             <option value="2">RUB</option>
             <option value="3">EUR</option>
-            <option value="4">VND</option>
+            <option value="4">USD</option>
             <option value="5">GBP</option>
             <option value="6">CNY</option>
             <option value="7">VND</option>
@@ -58,7 +62,7 @@
           </select>
           <a class="header__links" href="#">
             <img
-              class="header__search link"
+              class="header__search"
               src="assets/logo/magnifier.png"
               alt="search"
             />
@@ -66,5 +70,425 @@
         </div>
       </div>
     </header>
+    <main class="main">
+      <div class="section-productscroll">
+        <img
+          class="section-productscroll__img"
+          src="assets/images/image2.jpg"
+          alt="our customer"
+        />
+
+        <div class="section__images">
+          <img
+            class="section__images_list"
+            src="assets/images/image3.jpg"
+            alt="siba inu"
+          />
+          <img
+            class="section__images_list"
+            src="assets/images/image4.jpg"
+            alt="siba inu"
+          />
+          <img
+            class="section__images_list"
+            src="assets/images/image5.jpg"
+            alt="siba inu"
+          />
+          <img
+            class="section__images_list"
+            src="assets/images/image6.jpg"
+            alt="siba inu"
+          />
+          <img
+            class="section__images_list"
+            src="assets/images/image7.jpg"
+            alt="siba inu"
+          />
+        </div>
+      </div>
+      <section class="section-profile-dog">
+        <nav class="nav-way">
+          <a href="#" class="nav-way__link">Home</a>
+          <a href="#" class="nav-way__link">></a>
+          <a href="#" class="nav-way__link">Dog</a>
+          <a href="#" class="nav-way__link">></a>
+          <a href="#" class="nav-way__link">Large Dog</a>
+          <a href="#" class="nav-way__link">></a>
+          <a href="#" class="nav-way__link">Shiba Inu Sepia</a>
+        </nav>
+
+        <article class="profile">
+          <div class="profile__information">
+            <h1 class="profile__info">
+              Shiba Inu Sepia <span>34.000.000 VND</span>
+            </h1>
+            <div class="profile-buttons">
+              <button class="profile-buttons__contact button" type="submit">
+                Contact us
+              </button>
+              <button type="button" class="profile-buttons__chat button">
+                <span class="button__icon">
+                  <img
+                    class="button__icon_img"
+                    src="assets/logo/chat.svg"
+                    alt="chat icon"
+                  />
+                </span>
+                <span class="button__text"> Chat with Monito</span>
+              </button>
+            </div>
+
+            <p class="profile__list">Information</p>
+            <a class="profile__share" href="#"
+              ><img
+                class="profile__share_img"
+                src="assets/logo/share1.png"
+                alt="share link"
+            /></a>
+          </div>
+
+          <div class="profile__container">
+            <p class="profile__text">SKU</p>
+
+            <p class="profile__text">: #1000078</p>
+          </div>
+          <div class="profile__container">
+            <p class="profile__text">Gender</p>
+
+            <p class="profile__text">: Female</p>
+          </div>
+          <div class="profile__container">
+            <p class="profile__text">Age</p>
+
+            <p class="profile__text">: 2 Months</p>
+          </div>
+          <div class="profile__container">
+            <p class="profile__text">Size</p>
+
+            <p class="profile__text">: Small</p>
+          </div>
+          <div class="profile__container">
+            <p class="profile__text">Color</p>
+
+            <p class="profile__text">: Appricot & Tan</p>
+          </div>
+          <div class="profile__container">
+            <p class="profile__text">Vaccinated</p>
+
+            <p class="profile__text">: Yes</p>
+          </div>
+          <div class="profile__container">
+            <p class="profile__text">Dewormed</p>
+
+            <p class="profile__text">: Yes</p>
+          </div>
+          <div class="profile__container">
+            <p class="profile__text">Cert</p>
+
+            <p class="profile__text">: Yes (MKA)</p>
+          </div>
+          <div class="profile__container">
+            <p class="profile__text">Microchip</p>
+
+            <p class="profile__text">: Yes</p>
+          </div>
+          <div class="profile__container">
+            <p class="profile__text">Location</p>
+
+            <p class="profile__text">: Vietnam</p>
+          </div>
+          <div class="profile__container">
+            <p class="profile__text">Published Date</p>
+
+            <p class="profile__text">: 12-Oct-2022</p>
+          </div>
+          <div class="profile__container">
+            <p class="profile__text">Additional Information</p>
+
+            <p class="profile__text">
+              : Pure breed Shih Tzu. Good body structure. With MKA cert and
+              microchip. Father from champion lineage.
+            </p>
+          </div>
+        </article>
+      </section>
+      <article class="article">
+        <div class="article__column">
+          <img
+            class="article__logo"
+            src="assets/logo/pethealth.svg"
+            alt="logo nav"
+          />
+          <p class="article__text">100% health guarantee for pets</p>
+        </div>
+        <div class="article__column">
+          <img
+            class="article__logo"
+            src="assets/logo/petidentification.svg"
+            alt="logo nav"
+          />
+          <p class="article__text">100% guarantee of pet identification</p>
+        </div>
+      </article>
+
+      <section class="section-customer">
+        <h2 class="section-customer__heading">Our lovely customer</h2>
+        <div class="section-customer__photos">
+          <img
+            class="section-customer__img"
+            src="assets/images/image22.png"
+            alt="our customer"
+          />
+          <img
+            class="section-customer__img section-customer__img_unseen"
+            src="assets/images/image22-1.png"
+            alt="our customer"
+          />
+          <img
+            class="section-customer__img section-customer__img_unseen"
+            src="assets/images/image22-2.png"
+            alt="our customer"
+          />
+          <img
+            class="section-customer__img section-customer__img_unseen"
+            src="assets/images/image22-1.png"
+            alt="our customer"
+          />
+          <img
+            class="section-customer__img section-customer__img_unseen"
+            src="assets/images/image22-3.png"
+            alt="our customer"
+          />
+        </div>
+      </section>
+      <aside class="aside-card">
+        <h3 class="aside-card__heading">See more puppies</h3>
+        <div class="aside-card__container">
+          <div class="card-dog">
+            <div class="card-dog__img">
+              <img
+                src="assets/images/image3-2.jpg"
+                alt=""
+                class="card-dog__image"
+              />
+            </div>
+            <div class="card-dog__text">
+              <div class="card-dog__text_header">MO231 - Pomeranian White</div>
+              <div class="card-dog__text_features">
+                <div class="card-dog__text_feature__gender">
+                  <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                  <p class="card-dog__text_feature__gender-name">Male</p>
+                </div>
+                <ul class="card-dog__text_features-dot">
+                  <li></li>
+                </ul>
+                <div class="card-dog__text_feature__ages">
+                  <p class="card-dog__text_feature__ages-age">Age:</p>
+                  <p class="card-dog__text_feature__ages-years">02 Months</p>
+                </div>
+              </div>
+              <div class="card-dog__text_price">6.900.000 VND</div>
+            </div>
+          </div>
+          <div class="card-dog">
+            <div class="card-dog__img">
+              <img
+                src="assets/images/image22.jpg"
+                alt=""
+                class="card-dog__image"
+              />
+            </div>
+            <div class="card-dog__text">
+              <div class="card-dog__text_header">MO231 - Pomeranian White</div>
+              <div class="card-dog__text_features">
+                <div class="card-dog__text_feature__gender">
+                  <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                  <p class="card-dog__text_feature__gender-name">Male</p>
+                </div>
+                <ul class="card-dog__text_features-dot">
+                  <li></li>
+                </ul>
+                <div class="card-dog__text_feature__ages">
+                  <p class="card-dog__text_feature__ages-age">Age:</p>
+                  <p class="card-dog__text_feature__ages-years">02 Months</p>
+                </div>
+              </div>
+              <div class="card-dog__text_price">6.900.000 VND</div>
+            </div>
+          </div>
+          <div class="card-dog">
+            <div class="card-dog__img">
+              <img
+                src="assets/images/image3-3.jpg"
+                alt=""
+                class="card-dog__image"
+              />
+            </div>
+            <div class="card-dog__text">
+              <div class="card-dog__text_header">MO231 - Pomeranian White</div>
+              <div class="card-dog__text_features">
+                <div class="card-dog__text_feature__gender">
+                  <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                  <p class="card-dog__text_feature__gender-name">Male</p>
+                </div>
+                <ul class="card-dog__text_features-dot">
+                  <li></li>
+                </ul>
+                <div class="card-dog__text_feature__ages">
+                  <p class="card-dog__text_feature__ages-age">Age:</p>
+                  <p class="card-dog__text_feature__ages-years">02 Months</p>
+                </div>
+              </div>
+              <div class="card-dog__text_price">6.900.000 VND</div>
+            </div>
+          </div>
+          <div class="card-dog">
+            <div class="card-dog__img">
+              <img
+                src="assets/images/image3-4.jpg"
+                alt=""
+                class="card-dog__image"
+              />
+            </div>
+            <div class="card-dog__text">
+              <div class="card-dog__text_header">MO231 - Pomeranian White</div>
+              <div class="card-dog__text_features">
+                <div class="card-dog__text_feature__gender">
+                  <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                  <p class="card-dog__text_feature__gender-name">Male</p>
+                </div>
+                <ul class="card-dog__text_features-dot">
+                  <li></li>
+                </ul>
+                <div class="card-dog__text_feature__ages">
+                  <p class="card-dog__text_feature__ages-age">Age:</p>
+                  <p class="card-dog__text_feature__ages-years">02 Months</p>
+                </div>
+              </div>
+              <div class="card-dog__text_price">6.900.000 VND</div>
+            </div>
+          </div>
+          <div class="card-dog card-dog_unseen">
+            <div class="card-dog__img">
+              <img
+                src="assets/images/image23.jpg"
+                alt=""
+                class="card-dog__image"
+              />
+            </div>
+            <div class="card-dog__text">
+              <div class="card-dog__text_header">MO231 - Pomeranian White</div>
+              <div class="card-dog__text_features">
+                <div class="card-dog__text_feature__gender">
+                  <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                  <p class="card-dog__text_feature__gender-name">Male</p>
+                </div>
+                <ul class="card-dog__text_features-dot">
+                  <li></li>
+                </ul>
+                <div class="card-dog__text_feature__ages">
+                  <p class="card-dog__text_feature__ages-age">Age:</p>
+                  <p class="card-dog__text_feature__ages-years">02 Months</p>
+                </div>
+              </div>
+              <div class="card-dog__text_price">6.900.000 VND</div>
+            </div>
+          </div>
+          <div class="card-dog card-dog_unseen">
+            <div class="card-dog__img">
+              <img
+                src="assets/images/image3-1.jpg"
+                alt=""
+                class="card-dog__image"
+              />
+            </div>
+            <div class="card-dog__text">
+              <div class="card-dog__text_header">MO231 - Pomeranian White</div>
+              <div class="card-dog__text_features">
+                <div class="card-dog__text_feature__gender">
+                  <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                  <p class="card-dog__text_feature__gender-name">Male</p>
+                </div>
+                <ul class="card-dog__text_features-dot">
+                  <li></li>
+                </ul>
+                <div class="card-dog__text_feature__ages">
+                  <p class="card-dog__text_feature__ages-age">Age:</p>
+                  <p class="card-dog__text_feature__ages-years">02 Months</p>
+                </div>
+              </div>
+              <div class="card-dog__text_price">6.900.000 VND</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer class="footer">
+      <div class="footer_reg">
+        <p class="input_heading">Register Now So You Don't Miss Our Programs</p>
+        <form class="footer_form">
+          <input
+            type="text"
+            class="input_reg"
+            placeholder=" Enter your Email"
+          />
+          <butoon class="input_button" type="submit">Subcribe Now</butoon>
+        </form>
+      </div>
+      <div class="footer_connection">
+        <nav class="footer__nav">
+          <a class="footer__nav_link" href="#">Home</a>
+          <a class="footer__nav_link" href="#">Category</a>
+          <a class="footer__nav_link" href="#">About</a>
+          <a class="footer__nav_link" href="#">Contact</a>
+        </nav>
+        <div class="footer_contacts">
+          <a class="footer_contacts_link" href="#">
+            <img
+              class="footer_contacts_img"
+              src="assets/logo/facebook1.svg"
+              alt="logo nav"
+          /></a>
+          <a class="footer_contacts_link" href="#">
+            <img
+              class="footer_contacts_img"
+              src="assets/logo/Twitter1.svg"
+              alt="logo nav"
+          /></a>
+          <a class="footer_contacts_link" href="#">
+            <img
+              class="footer_contacts_img"
+              src="assets/logo/inst1.svg"
+              alt="logo nav"
+          /></a>
+          <a class="footer_contacts_link" href="#">
+            <img
+              class="footer_contacts_img"
+              src="assets/logo/youtube1.svg"
+              alt="logo nav"
+          /></a>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="footer_copyright">
+          <p class="footer_copyright__text">
+            © 2022 Monito. All rights reserved.
+          </p>
+        </div>
+        <div class="footer_logo">
+          <a href="#">
+            <img
+              class="footer__logo_major"
+              src="assets/logo/Group.svg"
+              alt="logo Monito"
+            />
+          </a>
+        </div>
+        <div class="footer__policy">
+          <a class="footer__policy_link" href="#">Terms of Service</a>
+          <a class="footer__policy_link" href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

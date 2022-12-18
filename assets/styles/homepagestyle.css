@@ -1,0 +1,907 @@
+@font-face {
+  font-family: "SVN-Gilroy Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SVN-Gilroy Light"), url("SVNGilroy Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SVN-Gilroy Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SVN-Gilroy Bold"), url("SVNGilroy Bold.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-family: "SVN-Gilroy", "Arial", sans-serif;
+  src: url("../fonts/SVN-GilroyBold.woff2"), url("../fonts/SVN-GilroyBold.woff");
+  font-style: normal;
+  font-weight: 700;
+}
+.overheader {
+  width: 100%;
+  background-color: #fceed5;
+  margin: 0;
+  padding-top: 20px;
+}
+.header {
+  height: 100px;
+  display: block;
+  margin-top: px;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header__nav {
+  display: none;
+}
+
+.header__burger {
+  width: 2.1rem;
+}
+.header__search {
+  width: 2.1rem;
+}
+.header__logo_major {
+  width: 6rem;
+}
+.header__button,
+.header__form,
+.header__select {
+  display: none;
+}
+.button {
+  width: 150px;
+  text-align: center;
+  font-size: 0.7em;
+  color: white;
+  padding: 9px 25px;
+  background-color: #003459;
+  border: none;
+  border-radius: 50px;
+}
+@media screen and (min-width: 780px) {
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 25em;
+    margin-left: 70px;
+  }
+  .header__nav_link {
+    font-size: 1rem;
+    color: #003459;
+  }
+  .header__burger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .overheader {
+    background: #fceed5;
+  }
+  .header {
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1%;
+  }
+  .header__links {
+    display: none;
+  }
+  .header__button {
+    display: flex;
+  }
+  .header__nav {
+    display: flex;
+  }
+  .header__form,
+  .header__select {
+    display: flex;
+  }
+  .header__select {
+    padding: 10px;
+    border: none;
+  }
+  form {
+    width: 200px;
+    margin: 0 auto;
+  }
+  .header__input {
+    background: url(../logo/magnifier.png) left no-repeat;
+    padding-left: 30px;
+    background-size: 15px;
+    border: none;
+    padding: 5px 5px 5px 25px;
+    font-size: 1rem;
+  }
+}
+.homepage__main_banner {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  height: 70vh;
+  background: #fceed5;
+  padding-left: 10px;
+}
+@media screen and (min-width: 1099px) {
+  .homepage__main_banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    height: 70vh;
+    background: #fceed5;
+  }
+}
+.homepage__main_banner__intro {
+  width: 100%;
+  background: #fceed5;
+}
+@media screen and (min-width: 1099px) {
+  .homepage__main_banner__intro {
+    width: 45%;
+    background: #fceed5;
+    padding-left: 80px;
+  }
+}
+h1 {
+  margin: 0;
+  font-size: 2.3em;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: capitalize;
+  color: #002a48;
+}
+@media screen and (min-width: 1099px) {
+  h1 {
+    font-size: 3.25em;
+    font-style: normal;
+    font-weight: 700;
+    height: auto;
+    margin: 0;
+    padding-top: 80px;
+    text-transform: capitalize;
+    color: #002a48;
+  }
+}
+.homepage__main_banner__intro_promo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.85em;
+  line-height: 1.9em;
+  text-transform: capitalize;
+  color: #002a48;
+}
+@media screen and (min-width: 1099px) {
+  .homepage__main_banner__intro_promo {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.25em;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: #002a48;
+  }
+}
+.homepage__main_banner__intro_text {
+  font-weight: 500;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  color: #242b33;
+}
+@media screen and (min-width: 1099px) {
+  .homepage__main_banner__intro_text {
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: #242b33;
+  }
+}
+.homepage__main_banner__intro_buttons {
+  padding-top: 5%;
+}
+@media screen and (min-width: 1099px) {
+  .homepage__main_banner__intro_buttons {
+    padding-top: 10%;
+  }
+}
+.homepage__main_banner__intro_buttons_view,
+.btn-view {
+  width: max-content;
+  height: max-content;
+  text-align: center;
+  font-size: 1em;
+  color: #003459;
+  padding: 9px 25px;
+  background-color: #fceed5;
+  border: 2px solid #003459;
+  border-radius: 50px;
+}
+@media screen and (min-width: 1099px) {
+  .homepage__main_banner__intro_buttons_view,
+  .btn-view {
+    width: 35%;
+    height: 8vh;
+    text-align: center;
+    font-size: 1.1em;
+    color: #003459;
+    padding: 9px 25px;
+    background-color: #fceed5;
+    border: 2px solid #003459;
+    border-radius: 50px;
+  }
+}
+.fa-circle-play {
+  border: none;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.homepage__main_banner__intro_buttons_explore,
+.btn-explore {
+  width: max-content;
+  height: max-content;
+  line-height: 2.5em;
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  padding: 9px 25px;
+  margin-left: 10%;
+  background-color: #003459;
+  border: none;
+  border-radius: 50px;
+}
+@media screen and (min-width: 1099px) {
+  .homepage__main_banner__intro_buttons_explore,
+  .btn-explore {
+    width: 35%;
+    height: 8vh;
+    text-align: center;
+    font-size: 1.1em;
+    color: white;
+    padding: 9px 25px;
+    margin-left: 10%;
+    background-color: #003459;
+    border: none;
+    border-radius: 50px;
+  }
+}
+.homepage__main_banner__picture {
+  width: 100%;
+  height: 60%;
+  background-color: #fceed5;
+  background-image: url(../pictures/mobile-pictures/good-humored-woman.png),
+    url(../pictures/homepage-mainbanner/square-beige-bottom-right.png),
+    url(../pictures/homepage-mainbanner/square-bluebottom-right.png);
+  background-size: cover, cover, cover;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 1099px) {
+  .homepage__main_banner__picture {
+    width: 55%;
+    height: 100%;
+    background: #fceed5;
+    background-image: url(../pictures/good-humored-woman-holds-dog-laughing-pink.png),
+      url(../pictures/homepage-mainbanner/square-beige-bottom-right.png),
+      url(../pictures/homepage-mainbanner/square-bluebottom-right.png);
+    background-size: cover, contain, contain;
+    background-repeat: no-repeat;
+    background-position: right, bottom, bottom;
+  }
+}
+.homepage__dogs_catalog,
+.homepage__catalogs {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__dogs_catalog,
+  .homepage__catalogs {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+.homepage__dogs_catalog__intro,
+.homepage__catalogs__intro {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__dogs_catalog__intro,
+  .homepage__catalogs__intro {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 60px;
+  }
+}
+.homepage__catalogs__intro_question,
+.homepage__dogs_catalog__intro_question {
+  width: 100%;
+  font-weight: 500;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__catalogs__intro_question,
+  .homepage__dogs_catalog__intro_question {
+    width: 100%;
+    font-weight: 500;
+  }
+}
+.homepage__dogs_catalog__intro_view-more,
+.homepage__catalogs__intro_view-more {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.homepage__dogs_catalog__intro_text-view,
+.homepage__catalogs__intro_text-view {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 36px;
+  text-transform: capitalize;
+  color: #003459;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__dogs_catalog__intro_text-view,
+  .homepage__catalogs__intro_text-view {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: #003459;
+  }
+}
+.homepage__dogs_catalog__intro_btn-view,
+.homepage-catalogs__btn_view {
+  display: none;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__dogs_catalog__intro_btn-view,
+  .homepage-catalogs__btn_view {
+    width: 150px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #003459;
+    line-height: 3em;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 2px solid #003459;
+    border-radius: 50px;
+  }
+}
+.fa-arrow-right {
+  padding: 8px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+.homepage__dogs_catalog__card_dogs,
+.homepage__catalog__cards {
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1180px) {
+  .homepage__dogs_catalog__card_dogs,
+  .homepage__catalog__cards {
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+.card_dog {
+  box-sizing: border-box;
+  border: 8px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 13px 0px #c3caca;
+  min-width: 185px;
+  min-height: 317px;
+  height: max-content;
+  width: 45vw;
+  height: 38%;
+}
+@media screen and (min-width: 576px) {
+  .card_dog {
+    height: max-content;
+    width: 24%;
+    border-bottom: none;
+    margin-bottom: 1%;
+  }
+}
+.card-dog__image,
+.card__img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__image,
+  .card__img {
+    height: 100%;
+  }
+}
+.card-dog__text {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text {
+    height: 26%;
+    margin-top: 8px;
+  }
+}
+.card-dog__text_header,
+.homepage__catalog__text_header {
+  height: 40%;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 4px;
+  color: #00171f;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text_header,
+  .homepage__catalog__text_header {
+    height: 30%;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}
+.card-dog__text_features {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 30%;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text_features {
+    flex-direction: row;
+    height: 25%;
+    margin-bottom: 0;
+  }
+}
+.card-dog__text_feature__gender {
+  display: flex;
+  color: #667479;
+  margin-bottom: 4px;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text_feature__gender {
+    margin-bottom: 0;
+  }
+}
+.card-dog__text_feature__gender-gene {
+  justify-content: flex-start;
+  line-height: 18px;
+  font-weight: 500;
+}
+.card-dog__text_feature__gender-name {
+  padding-left: 4px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.card-dog__text_features-dot {
+  display: none;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text_features-dot {
+    display: flex;
+    padding-left: 25px;
+    color: #667479;
+  }
+}
+.card-dog__text_feature__ages {
+  display: flex;
+  color: #667479;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text_feature__ages::before {
+    content: "";
+    color: #00171f;
+  }
+}
+.card-dog__text_feature__ages-age {
+  line-height: 18px;
+  font-weight: 500;
+}
+.card-dog__text_feature__ages-years {
+  padding-left: 4px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.card-dog__text_price {
+  height: 30%;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00171f;
+}
+@media screen and (min-width: 576px) {
+  .card-dog__text_price {
+    font-size: 14px;
+  }
+}
+.homepage__advertisement,
+.homepage__banners {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  margin: 10px 10px;
+  background-color: #003459;
+  background-image: url(../pictures/mobile-pictures/pink-top.png),
+    url(../pictures/mobile-pictures/blue-bottom.png);
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+  border-radius: 20px;
+}
+@media screen and (min-width: 786px) {
+  .homepage__advertisement,
+  .homepage__banners {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: max-content;
+    margin: 40px 80px;
+    background-color: #003459;
+    background-image: url(../pictures/homepage-mainbanner/homepage-adv-banner-blue.png),
+      url(../pictures/homepage-mainbanner/homepage-adv-banner-pink.png);
+    background-repeat: no-repeat;
+    background-position: left bottom, right top;
+    border-radius: 20px;
+  }
+}
+.homepage__advertisement_text,
+.homepage__banners_text {
+  width: 100%;
+  height: 50%;
+  padding-top: 15px;
+}
+@media screen and (min-width: 786px) {
+  .homepage__advertisement_text,
+  .homepage__banners_text {
+    width: 60%;
+    padding-top: 50px;
+    padding-right: 80px;
+  }
+}
+.homepage__advertisement_text_promo,
+.homepage__banners_text_promo {
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 800;
+  height: auto;
+  margin: 0;
+  text-transform: capitalize;
+  color: #002a48;
+  text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .homepage__advertisement_text_promo,
+  .homepage__banners_text_promo {
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 700;
+    height: auto;
+    margin: 0;
+    text-transform: capitalize;
+    color: #002a48;
+    text-align: right;
+  }
+}
+.homepage__advertisement_text__intro_promo,
+.homepage__banners_text__intro_promo {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6em;
+  line-height: 60px;
+  text-transform: capitalize;
+  color: #002a48;
+  text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .homepage__advertisement_text__intro_promo,
+  .homepage__banners_text__intro_promo {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.75em;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: #002a48;
+    text-align: right;
+  }
+}
+.homepage__advertisement_text__intro_text,
+.homepage__banners_text__intro_text {
+  font-weight: 500;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  color: #242b33;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+@media screen and (min-width: 786px) {
+  .homepage__advertisement_text__intro_text,
+  .homepage__banners_text__intro_text {
+    font-weight: 500;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    color: #242b33;
+    text-align: right;
+    padding-left: 120px;
+  }
+}
+.homepage__advertisement_picture,
+.homepage__banners__picture {
+  width: 40%;
+  height: 40vh;
+  background-image: url(../pictures/horizontal-shot-adult-girl-jeans.png);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  order: 1;
+}
+@media screen and (min-width: 786px) {
+  .homepage__advertisement_picture,
+  .homepage__banners__picture {
+    width: 50%;
+    height: 50vh;
+    background-image: url(../pictures/horizontal-shot-adult-girl-jeans.png);
+    background-size: cover;
+    background-position: bottom bottom;
+    background-repeat: no-repeat;
+    order: 0;
+  }
+}
+.homepage__advertisement_text__intro_buttons,
+.homepage__banners_buttons {
+  padding-top: 6%;
+  text-align: end;
+  margin-bottom: 40px;
+}
+.homepage__advertisement_text__intro_buttons_view {
+  font-size: 0.9em;
+  width: max-content;
+  height: fit-content;
+}
+.homepage__advertisement_text__intro_buttons_explore {
+  margin-right: 2%;
+  font-size: 0.9em;
+  line-height: 3em;
+  width: 40%;
+}
+@media screen and (min-width: 576px) {
+  .homepage__advertisement_text__intro_buttons_view {
+    font-size: 1em;
+    width: 30%;
+  }
+  .homepage__advertisement_text__intro_buttons_explore {
+    margin-left: 4%;
+    font-size: 1em;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 786px) {
+  .homepage__products_catalog {
+    display: none;
+  }
+}
+.card_product {
+  box-sizing: border-box;
+  border: 8px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 13px 0px #c3caca;
+  min-width: 185px;
+  min-height: 317px;
+  width: 45vw;
+  height: 38%;
+}
+@media screen and (min-width: 576px) {
+  .card_product {
+    height: max-content;
+    min-height: 446px;
+    width: 24%;
+    border-bottom: none;
+    margin-bottom: 1%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .free-toy-shaker {
+    display: flex;
+    height: max-content;
+    width: 100%;
+    justify-content: flex-start;
+    background: #fceed5;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1.7em;
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .free-cat-food {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    justify-content: flex-start;
+    background: #fceed5;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1.7em;
+  }
+}
+@media screen and (min-width: 576px) {
+  .free-toy-shaker__text::before {
+    content: "";
+    color: #00171f;
+  }
+}
+.card-product__text_header {
+  height: max-content;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 4px;
+  color: #00171f;
+}
+@media screen and (min-width: 576px) {
+  .card-product__text_header {
+    height: max-content;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 576px) {
+  .homepage__products_catalog__intro {
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 786px) {
+  .homepage__pet-sellers {
+    display: none;
+  }
+}
+@media screen and (min-width: 787px) {
+  .homepage__pet-sellers {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 80px;
+  }
+}
+.homepage__pet-sellers__intro_view-more {
+  width: 100%;
+}
+.homepage__pet-sellers__intro_text-view {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: none;
+  color: black;
+}
+.pet-sellers {
+  font-size: 1.3em;
+  color: #003459;
+  font-weight: 700;
+}
+.homepage__pet-sellers__intro_btn-view {
+  width: max-content;
+  background-color: white;
+}
+.homepage__pet-sellers__sellers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (max-width: 786px) {
+  .homepage__adoption {
+    display: none;
+  }
+}
+@media screen and (min-width: 787px) {
+  .homepage__adoption {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #ffb775;
+    background-image: url(../pictures/homapage-adoption/left.png),
+      url(../pictures/homapage-adoption/right.png);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+  }
+}
+.homepage__adoption_text {
+  width: 60%;
+}
+.homepage__adoption_text_promo,
+.homepage__adoption_text__intro_promo,
+.homepage__adoption_text__intro_text,
+.homepage__adoption_text__intro_buttons {
+  text-align: left;
+  padding-left: 80px;
+}
+.homepage__adoption_text__intro_text {
+  width: 60%;
+}
+.homepage__adoption_text__intro_buttons_explore {
+  margin-left: 0;
+  width: max-content;
+}
+.homepage__adoption_text__intro_buttons_view {
+  width: max-content;
+  margin-left: 5px;
+}
+.homepage__adoption_picture {
+  background-image: url(../pictures/dog-man-hands.png);
+}
+.homepage__knowledge__articles {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 787px) {
+  .homepage__knowledge__articles {
+    flex-direction: row;
+  }
+}
+.homepage__knowledge__article {
+  width: 100%;
+  height: fit-content;
+}
+@media screen and (min-width: 787px) {
+  .homepage__knowledge__article {
+    width: 32%;
+    height: 43%;
+  }
+}
+.pet-knowledge-teg {
+  width: fit-content;
+  padding: 0px 10px 0px 10px;
+  font-size: 0.8em;
+  font-weight: 700;
+  background: #00a7e7;
+  color: #fdfdfd;
+  border-radius: 28px;
+  line-height: 1.8em;
+}
+.knowledge__text_article {
+  margin-top: 1em;
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 1.7em;
+}

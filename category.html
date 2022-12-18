@@ -4,7 +4,691 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Monito Category</title>
+    <link rel="stylesheet" href="assets\styles\normalize.css" />
+    <link rel="stylesheet" href="assets\styles\categorystyle.css" />
+    <link rel="stylesheet" href="assets\styles\footer_style.css" />
+    <link rel="stylesheet" href="assets\styles\headerstyle.css" />
+    <link rel="stylesheet" href="assets/styles/filter_style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/6462/6462524.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/dffa2ca129.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <a class="header__links" href="#">
+            <img
+              class="header__burger link"
+              src="assets/logo/burger.svg"
+              alt="logo nav"
+            />
+          </a>
+          <a href="#">
+            <img
+              class="header__logo_major link"
+              src="assets/logo/Group.svg"
+              alt="logo Monito"
+            />
+          </a>
+          <nav class="header__nav">
+            <a class="header__nav_link" href="#">Home</a>
+            <a class="header__nav_link" href="#">Category</a>
+            <a class="header__nav_link" href="#">About</a>
+            <a class="header__nav_link" href="#">Contact</a>
+          </nav>
+
+          <form class="header__form">
+            <input
+              class="header__input"
+              type="text"
+              placeholder="Search something here!"
+            />
+          </form>
+          <button class="header__button button" type="submit">
+            Join the community
+          </button>
+          <select class="header__select header__select_cur">
+            <option value="1" selected>USD</option>
+            <option value="2">RUB</option>
+            <option value="3">EUR</option>
+            <option value="4">VND</option>
+            <option value="5">GBP</option>
+            <option value="6">CNY</option>
+            <option value="7">VND</option>
+            <option value="8">TRY</option>
+          </select>
+          <a class="header__links" href="#">
+            <img
+              class="header__search link"
+              src="assets/logo/magnifier.png"
+              alt="search"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <nav class="categorypage__nav">
+        <a class="categorypage__nav_item" href="#">Home</a>
+        <a class="categorypage__nav_item" href="#">Dog</a>
+        <a class="categorypage__nav_item" href="#">Small Dog</a>
+      </nav>
+      <div class="homepage__advertisement homepage__banners">
+        <div
+          class="homepage__advertisement_picture homepage__banners__picture"
+        ></div>
+        <div class="homepage__advertisement_text">
+          <div class="homepage__advertisement_text_promo">One more friend</div>
+          <h2 class="homepage__advertisement_text__intro_promo">
+            Thousands more fun!
+          </h2>
+          <div class="homepage__advertisement_text__intro_text">
+            <p>
+              Having a pet means you have more joy, a new friend, a happy person
+              who will always be with you to have fun. We have 200+ different
+              pets that can meet your needs!
+            </p>
+          </div>
+          <div class="homepage__advertisement_text__intro_buttons">
+            <button
+              class="homepage__advertisement_text__intro_buttons_view btn-view"
+            >
+              View Intro<i class="fa-solid fa-circle-play"></i>
+            </button>
+            <button
+              class="homepage__advertisement_text__intro_buttons_explore btn-explore"
+            >
+              Explore Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="categorypage__filters">
+      <div class="categorypage__filters_filter">
+        
+        <div class="filters__dogs">
+            <div class="filter__gender-dog">
+                <p class="filters_heading"> Filter</p>
+                
+            <label for="input_gender" class="filter_gender">Gender</label>Male <input
+            type="checkbox" name="gender" class="input_gender"> </label>Female  <input
+            type="checkbox" name="gender" class="input_gender"/>
+        </div>
+            <div class="filter__colors-dog">
+           <label for="input_color" class="filter_color">Color</label> 
+           <div class="filter_colorwrap">
+           <div class="color-wrapper"><input
+            type="checkbox"  class="input_color"><img src="assets/logo/circle1.svg" class="filter_color__circle" alt="circle"> Red </div> <div class="color-wrapper"><input
+            type="checkbox"  class="input_color"/><img src="assets/logo/circle2.svg" class="filter_color__circle" alt="circle">Aprico</div><div class="color-wrapper"> <input
+            type="checkbox"  class="input_color"><img src="assets/logo/circle3.svg" class="filter_color__circle" alt="circle"> Black</div><div class="color-wrapper"> <input
+            type="checkbox"  class="input_color"/><img src="assets/logo/circle4.svg" class="filter_color__circle" alt="circle">Black & White </div> <div class="color-wrapper"><input
+            type="checkbox"  class="input_color"><img src="assets/logo/circle5.svg" class="filter_color__circle" alt="circle"> Silver </div> <div class="color-wrapper"><input
+            type="checkbox"  class="input_color"/><img src="assets/logo/circle6.svg" class="filter_color__circle" alt="circle">Tan</div>
+        </div>
+    </div>
+        <div class="filter__price-dog">
+        <label for="price_dogs" class="filters_price">Price</label>
+        <input
+              class="price_dogs"
+              type="text"
+              placeholder="Min"
+            />
+            <input
+            class="price_dogs"
+            type="text"
+            placeholder="Max"
+          />
+         </div>
+         <div class="filter__breed-dog">
+            <label for="input_breed" class="filter_breed">Breed</label> <input
+            type="checkbox"  class="input_breed"> Small  <input
+            type="checkbox"  class="input_breed"/>Medium
+            <input
+            type="checkbox"  class="input_breed"/>Large</div>
+        </div>
+    </div>
+
+      <div class="categorypage__filters_dogs">
+        <div class="categorypage__filters_dogs__head">
+          <div class="categorypage__filters_dogs__head_sort">Small Dog</div>
+          <div class="categorypage__filters_dogs__head_amount">52 puppies</div>
+          <div class="categorypage__filters_dogs__head_choose"><select name="sort" id="sort">
+            <option value="Sort by: Popular">Sort by: Popular</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            </select></div>
+            <div class="icon_filter"><i class="fa-regular fa-filter"></i>Filter</div>
+        </div>
+        <div class="categorypage__filters_dogs__dogs">
+          <div
+            class="homepage__dogs_catalog__card_dogs homepage__catalog__cards"
+          >
+            <div class="card_dog homepage__dogs_catalog__item_Pomeranian">
+              <div class="card-dog__img">
+                <img
+                  src="assets\pictures\Pomeranian White.png"
+                  alt="pomeran"
+                  class="card-dog__image card__img"
+                />
+              </div>
+              <div class="card-dog__text">
+                <div
+                  class="card-dog__text_header homepage__catalog__text_header"
+                >
+                  MO231 - Pomeranian White
+                </div>
+                <div class="card-dog__text_features">
+                  <div class="card-dog__text_feature__gender">
+                    <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                    <p class="card-dog__text_feature__gender-name">Male</p>
+                  </div>
+                  <ul class="card-dog__text_features-dot">
+                    <li></li>
+                  </ul>
+                  <div class="card-dog__text_feature__ages">
+                    <p class="card-dog__text_feature__ages-age">Age:</p>
+                    <p class="card-dog__text_feature__ages-years">02 Months</p>
+                  </div>
+                </div>
+                <div class="card-dog__text_price">6.900.000 VND</div>
+              </div>
+            </div>
+            <div class="card_dog homepage__dogs_catalog__item_poodle-yellow">
+              <div class="card-dog__img">
+                <img
+                  src="assets\pictures\Poodle Tiny Yellow.png"
+                  alt="poodle"
+                  class="card-dog__image card__img"
+                />
+              </div>
+              <div class="card-dog__text">
+                <div
+                  class="card-dog__text_header homepage__catalog__text_header"
+                >
+                  MO502 - Poodle Tiny Yellow
+                </div>
+                <div class="card-dog__text_features">
+                  <div class="card-dog__text_feature__gender">
+                    <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                    <p class="card-dog__text_feature__gender-name">Female</p>
+                  </div>
+                  <ul class="card-dog__text_features-dot">
+                    <li></li>
+                  </ul>
+                  <div class="card-dog__text_feature__ages">
+                    <p class="card-dog__text_feature__ages-age">Age:</p>
+                    <p class="card-dog__text_feature__ages-years">02 Months</p>
+                  </div>
+                </div>
+                <div class="card-dog__text_price">3.900.000 VND</div>
+              </div>
+            </div>
+            <div class="card_dog homepage__dogs_catalog__item_poodle-sepia">
+              <div class="card-dog__img">
+                <img
+                  src="assets\pictures\Poodle Tiny Sepia.png"
+                  alt="poodle"
+                  class="card-dog__image card__img"
+                />
+              </div>
+              <div class="card-dog__text">
+                <div
+                  class="card-dog__text_header homepage__catalog__text_header"
+                >
+                  MO102 - Poodle Tiny Sepia
+                </div>
+                <div class="card-dog__text_features">
+                  <div class="card-dog__text_feature__gender">
+                    <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                    <p class="card-dog__text_feature__gender-name">Male</p>
+                  </div>
+                  <ul class="card-dog__text_features-dot">
+                    <li></li>
+                  </ul>
+                  <div class="card-dog__text_feature__ages">
+                    <p class="card-dog__text_feature__ages-age">Age:</p>
+                    <p class="card-dog__text_feature__ages-years">02 Months</p>
+                  </div>
+                </div>
+                <div class="card-dog__text_price">4.000.000 VND</div>
+              </div>
+            </div>
+            <div class="card_dog homepage__dogs_catalog__item-alaskan">
+              <div class="card-dog__img">
+                <img
+                  src="assets\pictures\Alaskan Malamute Grey.png"
+                  alt="alaskan"
+                  class="card-dog__image card__img"
+                />
+              </div>
+              <div class="card-dog__text">
+                <div
+                  class="card-dog__text_header homepage__catalog__text_header"
+                >
+                  MO512 - Alaskan Malamute Grey
+                </div>
+                <div class="card-dog__text_features">
+                  <div class="card-dog__text_feature__gender">
+                    <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                    <p class="card-dog__text_feature__gender-name">Male</p>
+                  </div>
+                  <ul class="card-dog__text_features-dot">
+                    <li></li>
+                  </ul>
+                  <div class="card-dog__text_feature__ages">
+                    <p class="card-dog__text_feature__ages-age">Age:</p>
+                    <p class="card-dog__text_feature__ages-years">02 Months</p>
+                  </div>
+                </div>
+                <div class="card-dog__text_price">8.900.000 VND</div>
+              </div>
+            </div>
+            <div class="card_dog homepage__dogs_catalog__item-pembroke-cream">
+              <div class="card-dog__img">
+                <img
+                  src="assets\pictures\Pembroke Corgi Cream.png"
+                  alt="pembroke"
+                  class="card-dog__image card__img"
+                />
+              </div>
+              <div class="card-dog__text">
+                <div
+                  class="card-dog__text_header homepage__catalog__text_header"
+                >
+                  MO231 - Pembroke Corgi Cream
+                </div>
+                <div class="card-dog__text_features">
+                  <div class="card-dog__text_feature__gender">
+                    <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                    <p class="card-dog__text_feature__gender-name">Male</p>
+                  </div>
+                  <ul class="card-dog__text_features-dot">
+                    <li></li>
+                  </ul>
+                  <div class="card-dog__text_feature__ages">
+                    <p class="card-dog__text_feature__ages-age">Age:</p>
+                    <p class="card-dog__text_feature__ages-years">02 Months</p>
+                  </div>
+                </div>
+                <div class="card-dog__text_price">7.900.000 VND</div>
+              </div>
+            </div>
+            <div
+              class="card_dog homepage__dogs_catalog__item-pembroke-tricolor"
+            >
+              <div class="card-dog__img">
+                <img
+                  src="assets\pictures\Pembroke Corgi Tricolor.png"
+                  alt="pembroke"
+                  class="card-dog__image card__img"
+                />
+              </div>
+              <div class="card-dog__text">
+                <div
+                  class="card-dog__text_header homepage__catalog__text_header"
+                >
+                  MO502 - Pembroke Corgi Tricolor
+                </div>
+                <div class="card-dog__text_features">
+                  <div class="card-dog__text_feature__gender">
+                    <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                    <p class="card-dog__text_feature__gender-name">Female</p>
+                  </div>
+                  <ul class="card-dog__text_features-dot">
+                    <li></li>
+                  </ul>
+                  <div class="card-dog__text_feature__ages">
+                    <p class="card-dog__text_feature__ages-age">Age:</p>
+                    <p class="card-dog__text_feature__ages-years">02 Months</p>
+                  </div>
+                </div>
+                <div class="card-dog__text_price">9.000.000 VND</div>
+              </div>
+            </div>
+            <div class="card_dog homepage__dogs_catalog__item-pomeranian-mo">
+              <div class="card-dog__img">
+                <img
+                  src="assets\pictures\MO231 - Pomeranian White.png"
+                  alt="pomeran"
+                  class="card-dog__image card__img"
+                />
+              </div>
+              <div class="card-dog__text">
+                <div
+                  class="card-dog__text_header homepage__catalog__text_header"
+                >
+                  MO231 - Pomeranian White
+                </div>
+                <div class="card-dog__text_features">
+                  <div class="card-dog__text_feature__gender">
+                    <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                    <p class="card-dog__text_feature__gender-name">Female</p>
+                  </div>
+                  <ul class="card-dog__text_features-dot">
+                    <li></li>
+                  </ul>
+                  <div class="card-dog__text_feature__ages">
+                    <p class="card-dog__text_feature__ages-age">Age:</p>
+                    <p class="card-dog__text_feature__ages-years">02 Months</p>
+                  </div>
+                </div>
+                <div class="card-dog__text_price">6.500.000 VND</div>
+              </div>
+            </div>
+            <div class="card_dog homepage__dogs_catalog__item-poodle-cow">
+              <div class="card-dog__img">
+                <img
+                  src="assets\pictures\Poodle Tiny Dairy Cow.png"
+                  alt="poodle"
+                  class="card-dog__image card__img"
+                />
+              </div>
+              <div class="card-dog__text">
+                <div
+                  class="card-dog__text_header homepage__catalog__text_header"
+                >
+                  MO512 - Poodle Tiny Dairy Cow
+                </div>
+                <div class="card-dog__text_features">
+                  <div class="card-dog__text_feature__gender">
+                    <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                    <p class="card-dog__text_feature__gender-name">Male</p>
+                  </div>
+                  <ul class="card-dog__text_features-dot">
+                    <li></li>
+                  </ul>
+                  <div class="card-dog__text_feature__ages">
+                    <p class="card-dog__text_feature__ages-age">Age:</p>
+                    <p class="card-dog__text_feature__ages-years">02 Months</p>
+                  </div>
+                </div>
+                <div class="card-dog__text_price">5.000.000 VND</div>
+              </div>
+            </div>
+        
+          <div class="card_dog homepage__dogs_catalog__item_Pomeranian">
+            <div class="card-dog__img">
+              <img
+                src="assets\pictures\Pomeranian White.png"
+                alt="pomeran"
+                class="card-dog__image card__img"
+              />
+            </div>
+            <div class="card-dog__text">
+              <div class="card-dog__text_header homepage__catalog__text_header">
+                MO231 - Pomeranian White
+              </div>
+              <div class="card-dog__text_features">
+                <div class="card-dog__text_feature__gender">
+                  <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                  <p class="card-dog__text_feature__gender-name">Male</p>
+                </div>
+                <ul class="card-dog__text_features-dot">
+                  <li></li>
+                </ul>
+                <div class="card-dog__text_feature__ages">
+                  <p class="card-dog__text_feature__ages-age">Age:</p>
+                  <p class="card-dog__text_feature__ages-years">02 Months</p>
+                </div>
+              </div>
+              <div class="card-dog__text_price">6.900.000 VND</div>
+            </div>
+          </div>
+          <div class="card_dog homepage__dogs_catalog__item_poodle-yellow">
+            <div class="card-dog__img">
+              <img
+                src="assets\pictures\Poodle Tiny Yellow.png"
+                alt="poodle"
+                class="card-dog__image card__img"
+              />
+            </div>
+            <div class="card-dog__text">
+              <div class="card-dog__text_header homepage__catalog__text_header">
+                MO502 - Poodle Tiny Yellow
+              </div>
+              <div class="card-dog__text_features">
+                <div class="card-dog__text_feature__gender">
+                  <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                  <p class="card-dog__text_feature__gender-name">Female</p>
+                </div>
+                <ul class="card-dog__text_features-dot">
+                  <li></li>
+                </ul>
+                <div class="card-dog__text_feature__ages">
+                  <p class="card-dog__text_feature__ages-age">Age:</p>
+                  <p class="card-dog__text_feature__ages-years">02 Months</p>
+                </div>
+              </div>
+              <div class="card-dog__text_price">3.900.000 VND</div>
+            </div>
+          </div>
+          <div class="card_dog homepage__dogs_catalog__item_poodle-sepia">
+            <div class="card-dog__img">
+              <img
+                src="assets\pictures\Poodle Tiny Sepia.png"
+                alt="poodle"
+                class="card-dog__image card__img"
+              />
+            </div>
+            <div class="card-dog__text">
+              <div class="card-dog__text_header homepage__catalog__text_header">
+                MO102 - Poodle Tiny Sepia
+              </div>
+              <div class="card-dog__text_features">
+                <div class="card-dog__text_feature__gender">
+                  <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                  <p class="card-dog__text_feature__gender-name">Male</p>
+                </div>
+                <ul class="card-dog__text_features-dot">
+                  <li></li>
+                </ul>
+                <div class="card-dog__text_feature__ages">
+                  <p class="card-dog__text_feature__ages-age">Age:</p>
+                  <p class="card-dog__text_feature__ages-years">02 Months</p>
+                </div>
+              </div>
+              <div class="card-dog__text_price">4.000.000 VND</div>
+            </div>
+          </div>
+          <div class="card_dog homepage__dogs_catalog__item-alaskan">
+            <div class="card-dog__img">
+              <img
+                src="assets\pictures\Alaskan Malamute Grey.png"
+                alt="alaskan"
+                class="card-dog__image card__img"
+              />
+            </div>
+            <div class="card-dog__text">
+              <div class="card-dog__text_header homepage__catalog__text_header">
+                MO512 - Alaskan Malamute Grey
+              </div>
+              <div class="card-dog__text_features">
+                <div class="card-dog__text_feature__gender">
+                  <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                  <p class="card-dog__text_feature__gender-name">Male</p>
+                </div>
+                <ul class="card-dog__text_features-dot">
+                  <li></li>
+                </ul>
+                <div class="card-dog__text_feature__ages">
+                  <p class="card-dog__text_feature__ages-age">Age:</p>
+                  <p class="card-dog__text_feature__ages-years">02 Months</p>
+                </div>
+              </div>
+              <div class="card-dog__text_price">8.900.000 VND</div>
+            </div>
+          </div>
+          <div class="card_dog homepage__dogs_catalog__item-pembroke-cream">
+            <div class="card-dog__img">
+              <img
+                src="assets\pictures\Pembroke Corgi Cream.png"
+                alt="pembroke"
+                class="card-dog__image card__img"
+              />
+            </div>
+            <div class="card-dog__text">
+              <div class="card-dog__text_header homepage__catalog__text_header">
+                MO231 - Pembroke Corgi Cream
+              </div>
+              <div class="card-dog__text_features">
+                <div class="card-dog__text_feature__gender">
+                  <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                  <p class="card-dog__text_feature__gender-name">Male</p>
+                </div>
+                <ul class="card-dog__text_features-dot">
+                  <li></li>
+                </ul>
+                <div class="card-dog__text_feature__ages">
+                  <p class="card-dog__text_feature__ages-age">Age:</p>
+                  <p class="card-dog__text_feature__ages-years">02 Months</p>
+                </div>
+              </div>
+              <div class="card-dog__text_price">7.900.000 VND</div>
+            </div>
+          </div>
+          <div class="card_dog homepage__dogs_catalog__item-pembroke-tricolor">
+            <div class="card-dog__img">
+              <img
+                src="assets\pictures\Pembroke Corgi Tricolor.png"
+                alt="pembroke"
+                class="card-dog__image card__img"
+              />
+            </div>
+            <div class="card-dog__text">
+              <div class="card-dog__text_header homepage__catalog__text_header">
+                MO502 - Pembroke Corgi Tricolor
+              </div>
+              <div class="card-dog__text_features">
+                <div class="card-dog__text_feature__gender">
+                  <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                  <p class="card-dog__text_feature__gender-name">Female</p>
+                </div>
+                <ul class="card-dog__text_features-dot">
+                  <li></li>
+                </ul>
+                <div class="card-dog__text_feature__ages">
+                  <p class="card-dog__text_feature__ages-age">Age:</p>
+                  <p class="card-dog__text_feature__ages-years">02 Months</p>
+                </div>
+              </div>
+              <div class="card-dog__text_price">9.000.000 VND</div>
+            </div>
+          </div>
+          <div class="card_dog homepage__dogs_catalog__item-pomeranian-mo">
+            <div class="card-dog__img">
+              <img
+                src="assets\pictures\MO231 - Pomeranian White.png"
+                alt="pomeran"
+                class="card-dog__image card__img"
+              />
+            </div>
+            <div class="card-dog__text">
+              <div class="card-dog__text_header homepage__catalog__text_header">
+                MO231 - Pomeranian White
+              </div>
+              <div class="card-dog__text_features">
+                <div class="card-dog__text_feature__gender">
+                  <p class="card-dog__text_feature__gender-gene">Gene:</p>
+                  <p class="card-dog__text_feature__gender-name">Female</p>
+                </div>
+                <ul class="card-dog__text_features-dot">
+                  <li></li>
+                </ul>
+                <div class="card-dog__text_feature__ages">
+                  <p class="card-dog__text_feature__ages-age">Age:</p>
+                  <p class="card-dog__text_feature__ages-years">02 Months</p>
+                </div>
+              </div>
+              <div class="card-dog__text_price">6.500.000 VND</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="filter__dogs_nav">
+        <a class="cards__amount" href="#"></a>
+        <a class="cards__amount" href="#">1</a>
+        <a class="cards__amount" href="#">2</a>
+        <a class="cards__amount" href="#">3</a>
+        <a class="cards__amount" href="#">4</a>
+        <a class="cards__amount" href="#">...</a>
+        <a class="cards__amount" href="#">28</a>
+        <a class="cards__amount" href="#"></a>
+      </nav>
+    </section>
+    <footer class="footer">
+      <div class="footer_reg">
+        <p class="input_heading">Register Now So You Don't Miss Our Programs</p>
+        <form class="footer_form">
+          <input
+            type="text"
+            class="input_reg"
+            placeholder=" Enter your Email"
+          />
+          <butoon class="input_button" type="submit">Subcribe Now</butoon>
+        </form>
+      </div>
+      <div class="footer_connection">
+        <nav class="footer__nav">
+          <a class="footer__nav_link" href="#">Home</a>
+          <a class="footer__nav_link" href="#">Category</a>
+          <a class="footer__nav_link" href="#">About</a>
+          <a class="footer__nav_link" href="#">Contact</a>
+        </nav>
+        <div class="footer_contacts">
+          <a class="footer_contacts_link" href="#">
+            <img
+              class="footer_contacts_img"
+              src="assets/logo/facebook1.svg"
+              alt="logo nav"
+          /></a>
+          <a class="footer_contacts_link" href="#">
+            <img
+              class="footer_contacts_img"
+              src="assets/logo/Twitter1.svg"
+              alt="logo nav"
+          /></a>
+          <a class="footer_contacts_link" href="#">
+            <img
+              class="footer_contacts_img"
+              src="assets/logo/inst1.svg"
+              alt="logo nav"
+          /></a>
+          <a class="footer_contacts_link" href="#">
+            <img
+              class="footer_contacts_img"
+              src="assets/logo/youtube1.svg"
+              alt="logo nav"
+          /></a>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="footer_copyright">
+          <p class="footer_copyright__text">
+            © 2022 Monito. All rights reserved.
+          </p>
+        </div>
+        <div class="footer_logo">
+          <a href="#">
+            <img
+              class="footer__logo_major"
+              src="assets/logo/Group.svg"
+              alt="logo Monito"
+            />
+          </a>
+        </div>
+        <div class="footer__policy">
+          <a class="footer__policy_link" href="#">Terms of Service</a>
+          <a class="footer__policy_link" href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
